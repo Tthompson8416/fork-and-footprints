@@ -1,0 +1,49 @@
+/* Full-screen background image */
+.home-container {
+    background-image: url('../assets/images/homepage-background.jpg'); /* Use the actual path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* To position child elements */
+    color: #fff; /* Text color for contrast */
+    font-family: 'Arial, sans-serif';
+  }
+  
+  /* Transparent rectangle with border */
+  .content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    border: 2px solid #f4f4f4; /* Solid white border */
+    padding: 20px 40px;
+    text-align: center;
+    max-width: 80%;
+    border-radius: 8px; /* Slightly rounded corners */
+  }
+  
+  /* App name styling */
+  .app-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Subtitle text */
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Quote in bottom right */
+  .quote {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.8; /* Subtle transparency */
+  }
+  
