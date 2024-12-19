@@ -1,0 +1,8 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%; /* Ensure full width for body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
