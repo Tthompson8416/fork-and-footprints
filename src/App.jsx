@@ -7,7 +7,7 @@ import RecipeCollection from "./pages/RecipeCollection";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/fork-and-footprints">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

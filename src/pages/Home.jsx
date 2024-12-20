@@ -71,7 +71,7 @@ const Home = () => {
           >
             {/* Fork Icon */}
             <div
-              className="absolute top-10 left-10 bg-custom-accent p-4 rounded-full animate-pop-in"
+              className="absolute top-10 left-10 bg-custom-accent p-4 rounded-full z-10 animate-pop-in"
               style={{ animationDelay: "1s" }}
             >
               <img
