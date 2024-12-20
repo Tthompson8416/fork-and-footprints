@@ -22,7 +22,7 @@ const Home = () => {
     <div className="h-screen w-screen">
       <Swiper
         modules={[Pagination]}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true }} // Enable pagination
         className="h-screen w-screen right-8 top-8"
         slidesPerView={1}
         loop={true}
@@ -37,7 +37,9 @@ const Home = () => {
           >
             {/* Transparent Rectangle */}
             <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] h-[500px]">
-              <h1 className="text-6xl uppercase tracking-wider mt-28">Fork & Footprints</h1>
+              <h1 className="text-6xl uppercase tracking-wider mt-28">
+                Fork & Footprints
+              </h1>
               <p className="text-3xl font-thin mt-16 pr-12 pl-12 leading-relaxed">
                 Explore the world, one bite at a time.
                 <br />
@@ -53,7 +55,9 @@ const Home = () => {
               }`}
             >
               <p>
-                {"Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."}
+                {
+                  "Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."
+                }
                 <br />- Travis Scott
               </p>
             </div>
@@ -83,17 +87,18 @@ const Home = () => {
 
             {/* Transparent Rectangle */}
             <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg max-w-[80%] w-[900px] h-[500px]">
-              <h2 className="text-5xl uppercase tracking-wider mt-16">Explore Recipes</h2>
-              <p className="text-2xl font-thin mt-10 px-10 leading-relaxed">
-                Discover culinary delights from around the world. Click below to
-                start your journey.
+              <h2 className="text-4xl uppercase tracking-wider mt-16">
+                Explore Recipes
+              </h2>
+              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">Embark on a culinary journey through the vibrant flavors I have discovered during my wanderlust-filled adventures across distant lands. I've gathered a collection of authentic recipes that capture the heart and soul of each destination. Let your taste buds be your compass as you discover the magic that happens when local ingredients meet time-honored techniques.
+
               </p>
               {/* Button */}
               <button
                 onClick={() => console.log("Navigate to recipes page")} // Update navigation logic
-                className="mt-8 px-8 py-4 bg-custom-accent text-white rounded-lg border-2 border-white hover:bg-opacity-90"
+                className="mt-3 px-8 py-4 bg-custom-accent text-white font-bold text-xl rounded-lg border-2 border-white hover:bg-opacity-90"
               >
-                Click Here
+                Explore Recipes
               </button>
             </div>
           </div>
