@@ -4,6 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
 import backgroundImage from "../assets/images/homepage-background.jpg"; // First slide's background
+import backgroundImage2 from "../assets/images/spice-bowl.jpg";
 import forkImage from "../assets/images/fork.png"; // Fork icon for the second slide
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
         {/* Slide 1: Original Homepage Content */}
         <SwiperSlide>
           <div
-            className="h-screen mr-20 right-8 top-8 w-screen bg-cover bg-center text-white relative font-serif"
+            className="h-screen mr-20 w-screen bg-cover bg-center text-white relative font-serif"
             style={{
               backgroundImage: `url(${backgroundImage})`,
             }}
@@ -65,7 +66,7 @@ const Home = () => {
           <div
             className="h-screen w-screen bg-cover bg-center relative text-white font-serif"
             style={{
-              backgroundImage: `url('/src/assets/images/your-second-slide-image.jpg')`, // Update path
+              backgroundImage: `url(${backgroundImage2})`, // Update path
             }}
           >
             {/* Fork Icon */}
