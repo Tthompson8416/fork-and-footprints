@@ -16,17 +16,17 @@ function Navbar() {
 
   return (
     <nav 
-    className={`bg-custom-accent text-white text-3xl fixed top-0 left-0 w-full z-10 p-4 mt-0 flex items-center transition-transform duration-700 ${
+    className={`bg-custom-accent text-white text-xl fixed top-0 left-0 w-full z-10 p-4 mt-0 flex items-center transition-transform duration-700 ${
     isVisible ? "translate-y-0" : "-translate-y-full"
   }`}
     style={{ height: "70px" }}
     >
       <div className="w-full flex items-center justify-between">
         {/* Left side */}
-        <h1 className="text-3xl pl-10">Fork & Footprints</h1>
+        <h1 className="text-3xl pl-2">Fork & Footprints</h1>
 
         {/* Right side */}
-        <ul className="flex gap-10 pr-10 font-thin">
+        <ul className="flex gap-8 pr-2 font-thin">
           <li>
             <Link to="/" className="hover:text-yellow-300">
               Home

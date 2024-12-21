@@ -37,10 +37,10 @@ const Home = () => {
           >
             {/* Transparent Rectangle */}
             <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] h-[500px]">
-              <h1 className="text-6xl uppercase tracking-wider mt-28">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider mt-28">
                 Fork & Footprints
               </h1>
-              <p className="text-3xl font-thin mt-16 pr-12 pl-12 leading-relaxed">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-thin mt-16 pr-12 pl-12 leading-relaxed">
                 Explore the world, one bite at a time.
                 <br />
                 Come join me on my culinary journey across Europe as I show you
@@ -90,15 +90,15 @@ const Home = () => {
               <h2 className="text-4xl uppercase tracking-wider mt-16">
                 Explore Recipes
               </h2>
-              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">Embark on a culinary journey through the vibrant flavors I have discovered during my wanderlust-filled adventures across distant lands. I've gathered a collection of authentic recipes that capture the heart and soul of each destination. Let your taste buds be your compass as you discover the magic that happens when local ingredients meet time-honored techniques.
+              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">Embark on a culinary journey through the vibrant flavors I have discovered during my wanderlust-filled adventures across distant lands. I have gathered a collection of authentic recipes that capture the heart and soul of each destination. Let your taste buds be your compass as you discover the magic that happens when local ingredients meet time-honored techniques.
 
               </p>
               {/* Button */}
               <button
                 onClick={() => console.log("Navigate to recipes page")} // Update navigation logic
-                className="mt-3 px-8 py-4 bg-custom-accent text-white font-bold text-xl rounded-lg border-2 border-white hover:bg-opacity-90"
+                className="mt-8 px-8 py-4 bg-custom-accent text-white rounded-lg border-2 border-white hover:bg-opacity-90"
               >
-                Explore Recipes
+                Explore Recipeds
               </button>
             </div>
           </div>
