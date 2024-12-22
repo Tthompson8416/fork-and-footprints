@@ -107,12 +107,8 @@ const Home = () => {
               </button>
             </div>
             {/* Quote in the Bottom Right */}
-            <div
-              className={`absolute bottom-10 right-10 w-[700px] text-2xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
-                isQuoteVisible ? "translate-x-0" : "translate-x-[150%]"
-              }`}
-            >
-              <p>
+            <div className="absolute bottom-24 right-0 pl-4 pr-4 mb-12 ml-60">
+              <p className="text-white text-xl pr-12 xl:pl-48 xl:ml-96 lg:ml-48 md:text-2xl md:ml-12 md:pl-24 2xl:text-3xl 2xl:pr-48 font-thin italic">
                 {
                   "Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."
                 }
