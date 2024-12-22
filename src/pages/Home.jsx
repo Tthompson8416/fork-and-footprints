@@ -103,8 +103,21 @@ const Home = () => {
                 onClick={() => console.log("Navigate to recipes page")} // Update navigation logic
                 className="mt-8 px-8 py-4 bg-custom-accent text-white rounded-lg border-2 border-white hover:bg-opacity-90"
               >
-                Explore Recipeds
+                Explore Recipes
               </button>
+            </div>
+            {/* Quote in the Bottom Right */}
+            <div
+              className={`absolute bottom-10 right-10 w-[700px] text-2xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
+                isQuoteVisible ? "translate-x-0" : "translate-x-[150%]"
+              }`}
+            >
+              <p>
+                {
+                  "Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."
+                }
+                <br />- Travis Scott
+              </p>
             </div>
           </div>
         </SwiperSlide>
