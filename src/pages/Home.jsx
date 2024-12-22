@@ -50,8 +50,8 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-5 pr-20 pb-20 w-[700px] text-3xl font-thin italic opacity-80 transition-transform duration-700 ${
-                isQuoteVisible ? "translate-x-0" : "translate-x-full"
+              className={`absolute bottom-10 right-10 w-[700px] text-2xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
+                isQuoteVisible ? "translate-x-0" : "translate-x-[150%]"
               }`}
             >
               <p>
@@ -90,8 +90,13 @@ const Home = () => {
               <h2 className="text-4xl uppercase tracking-wider mt-16">
                 Explore Recipes
               </h2>
-              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">Embark on a culinary journey through the vibrant flavors I have discovered during my wanderlust-filled adventures across distant lands. I have gathered a collection of authentic recipes that capture the heart and soul of each destination. Let your taste buds be your compass as you discover the magic that happens when local ingredients meet time-honored techniques.
-
+              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">
+                Embark on a culinary journey through the vibrant flavors I have
+                discovered during my wanderlust-filled adventures across distant
+                lands. I have gathered a collection of authentic recipes that
+                capture the heart and soul of each destination. Let your taste
+                buds be your compass as you discover the magic that happens when
+                local ingredients meet time-honored techniques.
               </p>
               {/* Button */}
               <button
