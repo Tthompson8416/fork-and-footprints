@@ -108,7 +108,7 @@ const Home = () => {
             </div>
             {/* Quote in the Bottom Right */}
             <div className="absolute bottom-24 right-0 pl-4 pr-4 mb-12 ml-60">
-              <p className="text-white text-xl pr-12 xl:pl-48 xl:ml-96 lg:ml-48 md:text-2xl md:ml-12 md:pl-24 2xl:text-3xl 2xl:pr-48 font-thin italic">
+              <p className="text-white text-xl sm:text-green-400 pr-12 xl:pl-48 xl:ml-96 lg:ml-48 md:text-2xl md:ml-12 md:pl-24 2xl:text-3xl 2xl:pr-48 font-thin italic">
                 {
                   "Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."
                 }
