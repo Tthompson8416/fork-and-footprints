@@ -19,14 +19,14 @@ function Navbar() {
     className={`bg-custom-accent text-white text-xl fixed top-0 left-0 w-full z-10 p-4 mt-0 flex items-center transition-transform duration-700 ${
     isVisible ? "translate-y-0" : "-translate-y-full"
   }`}
-    style={{ height: "70px" }}
+    style={{ height: "50px" }}
     >
       <div className="w-full flex items-center justify-between">
         {/* Left side */}
-        <h1 className="text-3xl lg:text-4xl pl-2">Fork & Footprints</h1>
+        <h1 className="text-2xl lg:text-4xl pl-2">Fork & Footprints</h1>
 
         {/* Right side */}
-        <ul className="flex gap-8 pr-2 font-thin text-2xl lg:text-3xl">
+        <ul className="flex gap-8 pr-2 font-thin text-xl lg:text-3xl">
           <li>
             <Link to="/" className="hover:text-yellow-300">
               Home
