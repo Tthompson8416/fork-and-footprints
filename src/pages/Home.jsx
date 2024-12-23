@@ -36,11 +36,11 @@ const Home = () => {
             }}
           >
             {/* Transparent Rectangle */}
-            <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] h-[500px]">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider mt-28">
+            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px]">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl uppercase tracking-wider mt-12">
                 Fork & Footprints
               </h1>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-thin mt-16 pr-12 pl-12 leading-relaxed">
+              <p className="text-xl md:text-3xl lg:text-4xl font-thin mt-8 pr-12 pl-12 leading-relaxed">
                 Explore the world, one bite at a time.
                 <br />
                 Come join me on my culinary journey across Europe as I show you
@@ -50,7 +50,7 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-10 w-[700px] text-2xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
+              className={`absolute bottom-10 w-[500px] left-36 text-xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
                 isQuoteVisible ? "translate-x-0" : "translate-x-[150%]"
               }`}
             >

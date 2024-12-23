@@ -16,10 +16,10 @@ function Navbar() {
 
   return (
     <nav 
-    className={`bg-custom-accent text-white text-xl fixed top-0 left-0 w-full z-10 p-4 mt-0 flex items-center transition-transform duration-700 ${
+    className={`bg-custom-accent text-white text-xl fixed top-0 left-0 w-full z-10 p-4 flex items-center transition-transform duration-700 ${
     isVisible ? "translate-y-0" : "-translate-y-full"
   }`}
-    style={{ height: "50px" }}
+    style={{ height: "64px" }}
     >
       <div className="w-full flex items-center justify-between">
         {/* Left side */}
