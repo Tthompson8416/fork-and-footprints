@@ -36,11 +36,11 @@ const Home = () => {
             }}
           >
             {/* Transparent Rectangle */}
-            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] 3xl:h-[700px] 3xl:mt-20">
-              <h1 className="text-3xl lg:text-5xl uppercase tracking-wider mt-16">
+            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] 3xl:w-[1200px] 3xl:h-[650px] 3xl:mt-48">
+              <h1 className="text-3xl xs:text-2xl 3xl:text-7xl 3xl:pt-24 lg:text-5xl uppercase tracking-wider mt-12">
                 Fork & Footprints
               </h1>
-              <p className="text-xl md:text-1xl lg:text-3xl  font-thin mt-8 pr-12 pl-12 leading-relaxed">
+              <p className="text-xl xs:text-lg xs:p-0 md:text-1xl lg:text-3xl 3xl:text-4xl 3xl:pt-24 font-thin mt-8 pr-12 pl-12 leading-relaxed">
                 Explore the world, one bite at a time.
                 <br />
                 Come join me on my culinary journey across Europe as I show you
@@ -50,8 +50,8 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-0 w-[500px] left-36 text-xl md:text-1xl 2xl:text-2xl md:left-96 md:w-[400px] md:pr-2 lg:w-[500px] xl:w-[600px] lg:ml-36 xl:ml-60  font-thin italic opacity-80 transition-transform duration-700 ${
-                isQuoteVisible ? "translate-x-0" : "translate-x-[450%]"
+              className={`absolute bottom-10 right-0 xs:left-12 xs:pr-48 xs:w-[500px] w-[600px] left-36 text-xl xs:text-md md:text-1xl xl:text-2xl 3xl:text-3xl md:left-96 md:w-[400px] md:pr-2 lg:w-[500px] xl:w-[600px] lg:ml-36 xl:ml-60 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-700 ${
+                isQuoteVisible ? "translate-x-0 3xl:translate-x-[140%]" : "translate-x-[450%]"
               }`}
             >
               <p>
