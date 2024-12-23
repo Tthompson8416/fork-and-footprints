@@ -30,17 +30,17 @@ const Home = () => {
         {/* Slide 1: Original Homepage Content */}
         <SwiperSlide>
           <div
-            className="h-screen mr-20 w-screen bg-cover bg-center text-white md:text-red-500 relative font-serif"
+            className="h-screen mr-20 w-screen bg-cover bg-center text-white 3xl:text-blue-500 relative font-serif"
             style={{
               backgroundImage: `url(${backgroundImage})`,
             }}
           >
             {/* Transparent Rectangle */}
-            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px]">
-              <h1 className="text-3xl lg:text-6xl uppercase tracking-wider mt-16">
+            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] 3xl:h-[700px] 3xl:mt-20">
+              <h1 className="text-3xl lg:text-5xl uppercase tracking-wider mt-16">
                 Fork & Footprints
               </h1>
-              <p className="text-xl md:text-1xl lg:text-4xl font-thin mt-8 pr-12 pl-12 leading-relaxed">
+              <p className="text-xl md:text-1xl lg:text-3xl  font-thin mt-8 pr-12 pl-12 leading-relaxed">
                 Explore the world, one bite at a time.
                 <br />
                 Come join me on my culinary journey across Europe as I show you
@@ -50,8 +50,8 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 w-[500px] left-36 text-xl md:text-3xl 2xl:text-4xl font-thin italic opacity-80 transition-transform duration-700 ${
-                isQuoteVisible ? "translate-x-0" : "translate-x-[150%]"
+              className={`absolute bottom-10 right-0 w-[500px] left-36 text-xl md:text-1xl 2xl:text-2xl md:left-96 md:w-[400px] md:pr-2 lg:w-[500px] xl:w-[600px] lg:ml-36 xl:ml-60  font-thin italic opacity-80 transition-transform duration-700 ${
+                isQuoteVisible ? "translate-x-0" : "translate-x-[450%]"
               }`}
             >
               <p>

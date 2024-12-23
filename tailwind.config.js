@@ -9,7 +9,7 @@ export default {
         'custom-accent': '#707755',
       },
       animation: {
-        'pop-in': 'popIn 0.5s ease-out', // Define the custom pop-in animation
+        'pop-in': 'popIn 0.5s ease-out',
       },
       keyframes: {
         popIn: {
@@ -23,7 +23,10 @@ export default {
           },
         },
       },
+      screens: {
+        '3xl': '1536px', 
     },
   },
+},
   plugins: [],
 };
