@@ -30,7 +30,7 @@ const Home = () => {
         {/* Slide 1: Original Homepage Content */}
         <SwiperSlide>
           <div
-            className="h-screen mr-20 w-screen bg-cover bg-center text-white relative font-serif"
+            className="h-screen xs:h-[800px] xs:mb-48 mr-20 w-screen bg-cover bg-center text-white relative font-serif"
             style={{
               backgroundImage: `url(${backgroundImage})`,
             }}
