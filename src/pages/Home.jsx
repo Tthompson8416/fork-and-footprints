@@ -36,7 +36,7 @@ const Home = () => {
             }}
           >
             {/* Transparent Rectangle */}
-            <div className="absolute h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg max-w-[80%] w-[900px] 3xl:w-[850px] 3xl:h-[450px] 3xl:mt-36">
+            <div className="absolute max-w-[80%] w-[900px] h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg 3xl:w-[850px] 3xl:h-[450px] 3xl:mt-36">
               <h1 className="text-3xl text-white xs:text-2xl md:text-4xl 3xl:text-5xl 3xl:mt-0 3xl:pt-24 lg:text-5xl uppercase tracking-wider mt-12">
                 Fork & Footprints
               </h1>
@@ -51,7 +51,7 @@ const Home = () => {
             {/* Quote in the Bottom Right */}
             <div
               className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:w-[400px] xs:text-md sm:w-[450px] sm:p-12 md:w-[570px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl 3xl:mb-36 xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-700 ${
-                isQuoteVisible ? "translate-x-0 xs:translate-x-[10%] sm:translate-x-[20%] md:translate-x-[30%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[130%]" : "translate-x-[450%]"
+                isQuoteVisible ? "translate-x-0 xs:translate-x-[7%] sm:translate-x-[20%] md:translate-x-[30%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[130%]" : "translate-x-[450%]"
               }`}
             >
               <p>
@@ -64,6 +64,19 @@ const Home = () => {
           </div>
         </SwiperSlide>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* Slide 2: Custom Design for Slide 2 */}
         <SwiperSlide>
           {/* Slide Background */}
@@ -75,28 +88,24 @@ const Home = () => {
           >
             {/* Fork Icon */}
             <div
-              className="absolute top-10 left-10 bg-custom-accent p-4 rounded-full z-10 animate-pop-in"
+              className="absolute top-3 right-2 bg-custom-accent p-4 rounded-full z-10 animate-pop-in"
               style={{ animationDelay: "1s" }}
             >
               <img
                 src={forkImage} // Fork icon
                 alt="Fork Icon"
-                className="h-12 w-12"
+                className="h-10 w-10"
               />
             </div>
 
             {/* Transparent Rectangle */}
-            <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg max-w-[80%] w-[900px] h-[500px]">
+            <div className="absolute max-w-[80%] w-[900px] h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg xs:text-blue-700 sm:text-red-700 md:text-gray-600 lg:text-yellow-500 xl:text-green-600 2xl:text-pink-400 3xl:text-purple-900">
               <h2 className="text-4xl uppercase tracking-wider mt-16">
                 Explore Recipes
               </h2>
               <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">
                 Embark on a culinary journey through the vibrant flavors I have
-                discovered during my wanderlust-filled adventures across distant
-                lands. I have gathered a collection of authentic recipes that
-                capture the heart and soul of each destination. Let your taste
-                buds be your compass as you discover the magic that happens when
-                local ingredients meet time-honored techniques.
+                discovered during my wanderlust-filled .
               </p>
               {/* Button */}
               <button
@@ -106,7 +115,7 @@ const Home = () => {
                 Explore Recipes
               </button>
             </div>
-            {/* Quote in the Bottom Right */}
+            {/* Quote in the Bottom Right 
             <div className="absolute bottom-24 right-0 pl-4 pr-4 mb-12 ml-60">
               <p className="text-white text-xl sm:text-green-400 pr-12 xl:pl-48 xl:ml-96 lg:ml-48 md:text-2xl md:ml-12 md:pl-24 2xl:text-3xl 2xl:pr-48 font-thin italic">
                 {
@@ -114,7 +123,7 @@ const Home = () => {
                 }
                 <br />- Travis Scott
               </p>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
       </Swiper>
