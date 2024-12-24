@@ -101,10 +101,10 @@ const Home = () => {
 
             {/* Transparent Rectangle */}
             <div className="absolute max-w-[80%] w-[900px] h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg xs:text-blue-700 sm:text-red-700 md:text-gray-600 lg:text-yellow-500 xl:text-green-600 2xl:text-pink-400 3xl:text-purple-900">
-              <h2 className="text-2xl uppercase tracking-wider mt-8">
+              <h2 className="text-2xl sm:text-3xl uppercase tracking-wider mt-8">
                 Explore Recipes
               </h2>
-              <p className="text-xl mt-4 px-10 pb-12 xs:pb-16 leading-relaxed">
+              <p className="text-xl sm:text-2xl mt-8 px-10 pb-12 xs:pb-16 leading-relaxed">
                 A collection of recipes inspired from the places I have visited.
               </p>
               {/* Button */}
