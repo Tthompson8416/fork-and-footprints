@@ -103,7 +103,7 @@ const Home = () => {
               <h2 className="text-2xl uppercase tracking-wider mt-8">
                 Explore Recipes
               </h2>
-              <p className="text-xl mt-4 px-10 pb-12 leading-relaxed">
+              <p className="text-xl mt-4 px-10 pb-12 xs:pb-8 leading-relaxed">
                 A collection of recipes inspired from the places I have visited.
               </p>
               {/* Button */}
