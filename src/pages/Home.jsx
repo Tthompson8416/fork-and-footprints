@@ -94,23 +94,22 @@ const Home = () => {
               <img
                 src={forkImage} // Fork icon
                 alt="Fork Icon"
-                className="h-10 w-10"
+                className="h-6 w-6"
               />
             </div>
 
             {/* Transparent Rectangle */}
             <div className="absolute max-w-[80%] w-[900px] h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg xs:text-blue-700 sm:text-red-700 md:text-gray-600 lg:text-yellow-500 xl:text-green-600 2xl:text-pink-400 3xl:text-purple-900">
-              <h2 className="text-4xl uppercase tracking-wider mt-16">
+              <h2 className="xs:text-3xl uppercase tracking-wider mt-8">
                 Explore Recipes
               </h2>
-              <p className="text-2xl mt-10 px-10 pb-5 leading-relaxed">
-                Embark on a culinary journey through the vibrant flavors I have
-                discovered during my wanderlust-filled .
+              <p className="text-2xl mt-8 px-10 pb-5 leading-relaxed">
+                A collection of recipes inspired from the places I have visited.
               </p>
               {/* Button */}
               <button
                 onClick={() => console.log("Navigate to recipes page")} // Update navigation logic
-                className="mt-8 px-8 py-4 bg-custom-accent text-white rounded-lg border-2 border-white hover:bg-opacity-90"
+                className="xs:w-[130px] xs:h-[50px] px-2 py-2 mt-[-10px] bg-custom-accent text-white rounded-lg border-2 border-white hover:bg-opacity-90 whitespace-nowrap"
               >
                 Explore Recipes
               </button>
