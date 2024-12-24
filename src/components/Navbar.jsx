@@ -26,7 +26,7 @@ function Navbar() {
         <h1 className="text-xl xs:text-md lg:text-4xl pl-2 xs:whitespace-nowrap">Fork & Footprints</h1>
 
         {/* Right side */}
-        <ul className="flex gap-8 pr-2 font-thin text-lg xs:text-sm lg:text-3xl xs:whitespace-nowrap xs:gap-3 xs:ml-4">
+        <ul className="flex gap-8 pr-2 font-thin text-lg xs:text-md sm:text-xl md:text-2xl lg:text-3xl xs:whitespace-nowrap xs:gap-3 xs:ml-4">
           <li>
             <Link to="/" className="hover:text-yellow-300">
               Home
