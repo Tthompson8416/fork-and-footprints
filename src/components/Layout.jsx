@@ -6,7 +6,7 @@ function Layout({ children }) {
     <div className="relative h-screen bg-custom-accent text-gray-800 font-sans">
       <Navbar className="absolute top-0 left-0 w-full z-50" />
       <main className="p-8">{children}</main>
-      <footer className="p-4 bg-custom-accent text-center text-white text-xl">
+      <footer className="p-4 bg-custom-accent text-center text-white xs:text-sm text-xl whitespace-nowrap">
         <p>&copy; 2024 Fork & Footprints. All rights reserved.</p>
       </footer>
     </div>

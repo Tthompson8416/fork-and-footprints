@@ -50,7 +50,7 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:w-[400px] xs:text-md sm:w-[450px] sm:p-12 md:w-[570px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl 3xl:mb-36 xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-700 ${
+              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[400px] xs:text-md sm:w-[450px] sm:p-12 md:w-[570px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl 3xl:mb-36 xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-700 ${
                 isQuoteVisible ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-[20%] md:translate-x-[30%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[130%]" : "translate-x-[450%]"
               }`}
             >
