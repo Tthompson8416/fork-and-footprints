@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
-import backgroundImage from "../assets/images/homepage-background.jpg"; // First slide's background
+import backgroundImage from "../assets/images/homepage-background.jpg";
 import backgroundImage2 from "../assets/images/spice-bowl.jpg";
-import forkImage from "../assets/images/fork.png"; // Fork icon for the second slide
+import forkImage from "../assets/images/fork.png";
+import { Link } from "react-router-dom"; 
 
 const Home = () => {
   const [isQuoteVisible, setIsQuoteVisible] = useState(false);
@@ -107,12 +108,14 @@ const Home = () => {
                 A collection of recipes inspired from the places I have visited.
               </p>
               {/* Button */}
+              <Link to="/recipes">
               <button
                 onClick={() => console.log("Navigate to recipes page")} // Update navigation logic
                 className="w-[130px] h-[50px] px-2 py-2 mt-[-10px] bg-custom-accent text-white text-sm rounded-lg border-2 border-white hover:bg-opacity-90 whitespace-nowrap"
               >
                 Explore Recipes
               </button>
+              </Link>
             </div>
             {/* Quote in the Bottom Right 
             <div className="absolute bottom-24 right-0 pl-4 pr-4 mb-12 ml-60">
