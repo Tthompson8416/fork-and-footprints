@@ -89,13 +89,13 @@ const Home = () => {
           >
             {/* Fork Icon */}
             <div
-              className="absolute top-3 right-2 bg-custom-accent p-4 rounded-full z-10 animate-pop-in"
+              className="absolute top-3 right-2 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 animate-pop-in"
               style={{ animationDelay: "1s" }}
             >
               <img
                 src={forkImage} // Fork icon
                 alt="Fork Icon"
-                className="h-6 w-6"
+                className="h-6 w-6 sm:h-12 sm:w-12"
               />
             </div>
 
@@ -117,15 +117,6 @@ const Home = () => {
               </button>
               </Link>
             </div>
-            {/* Quote in the Bottom Right 
-            <div className="absolute bottom-24 right-0 pl-4 pr-4 mb-12 ml-60">
-              <p className="text-white text-xl sm:text-green-400 pr-12 xl:pl-48 xl:ml-96 lg:ml-48 md:text-2xl md:ml-12 md:pl-24 2xl:text-3xl 2xl:pr-48 font-thin italic">
-                {
-                  "Travel far, taste deeply, and embrace every moment. Let us find more things to put here tomorrow after lunch."
-                }
-                <br />- Travis Scott
-              </p>
-            </div> */}
           </div>
         </SwiperSlide>
       </Swiper>
