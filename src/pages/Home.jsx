@@ -6,7 +6,7 @@ import "swiper/css/pagination"; // Pagination styles
 import backgroundImage from "../assets/images/homepage-background.jpg";
 import backgroundImage2 from "../assets/images/spice-bowl.jpg";
 import forkImage from "../assets/images/fork.png";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isQuoteVisible, setIsQuoteVisible] = useState(false);
@@ -52,7 +52,9 @@ const Home = () => {
             {/* Quote in the Bottom Right */}
             <div
               className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[420px] xs:text-sm sm:w-[550px] sm:p-12 sm:text-lg md:w-[520px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl  xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-900 ease-in-out ${
-                isQuoteVisible ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-0 md:translate-x-[40%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[95%]" : "translate-x-[450%]"
+                isQuoteVisible
+                  ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-0 md:translate-x-[40%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[95%]"
+                  : "translate-x-[450%]"
               }`}
             >
               <p>
@@ -64,19 +66,6 @@ const Home = () => {
             </div>
           </div>
         </SwiperSlide>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         {/* Slide 2: Custom Design for Slide 2 */}
         <SwiperSlide>
@@ -90,7 +79,7 @@ const Home = () => {
             {/* Fork Icon */}
             <div
               className="absolute top-3 right-2 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 animate-pop-in"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: "10s" }}
             >
               <img
                 src={forkImage} // Fork icon
@@ -109,12 +98,12 @@ const Home = () => {
               </p>
               {/* Button */}
               <Link to="/recipes">
-              <button
-                onClick={() => console.log("Navigate to recipes page")}
-                className="w-[130px] h-[50px] xs:h-[40px] lg:w-[150px] 3xl:w-[170px] 3xl:h-[60px] lg:text-lg 3xl:text-xl sm:mt-4 lg:mt-8 lg:pb-8 3xl:pb-2 px-2 py-2 mt-[-10px] bg-custom-accent text-white text-sm rounded-lg border-2 border-white hover:bg-opacity-90 whitespace-nowrap"
-              >
-                Explore Recipes
-              </button>
+                <button
+                  onClick={() => console.log("Navigate to recipes page")}
+                  className="w-[130px] h-[50px] xs:h-[40px] lg:w-[150px] 3xl:w-[170px] 3xl:h-[60px] lg:text-lg 3xl:text-xl sm:mt-4 lg:mt-8 lg:pb-8 3xl:pb-2 px-2 py-2 mt-[-10px] bg-custom-accent text-white text-sm rounded-lg border-2 border-white hover:bg-opacity-90 whitespace-nowrap"
+                >
+                  Explore Recipes
+                </button>
               </Link>
             </div>
           </div>
