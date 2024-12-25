@@ -10,13 +10,24 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isQuoteVisible, setIsQuoteVisible] = useState(false);
+  const [isForkVisible, setIsForkVisible] = useState(false); // New state for fork visibility
 
+  // Control the quote visibility
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const quoteTimer = setTimeout(() => {
       setIsQuoteVisible(true);
-    }, 500);
+    }, 1200);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(quoteTimer);
+  }, []);
+
+  // Control the fork visibility
+  useEffect(() => {
+    const forkTimer = setTimeout(() => {
+      setIsForkVisible(true);
+    }, 2500); // 10-second delay
+
+    return () => clearTimeout(forkTimer);
   }, []);
 
   return (
@@ -51,7 +62,7 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[420px] xs:text-sm sm:w-[550px] sm:p-12 sm:text-lg md:w-[520px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl  xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-900 ease-in-out ${
+              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[420px] xs:text-sm sm:w-[550px] sm:p-12 sm:text-lg md:w-[520px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl  xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-700 ease-in-out ${
                 isQuoteVisible
                   ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-0 md:translate-x-[40%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[95%]"
                   : "translate-x-[450%]"
@@ -78,8 +89,9 @@ const Home = () => {
           >
             {/* Fork Icon */}
             <div
-              className="absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 animate-pop-in"
-              style={{ animationDelay: "10s" }}
+              className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
+                isForkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
             >
               <img
                 src={forkImage} // Fork icon
