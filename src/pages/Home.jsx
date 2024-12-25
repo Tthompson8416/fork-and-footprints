@@ -121,18 +121,31 @@ const Home = () => {
             </div>
           </div>
         </SwiperSlide>
-              
+
         {/* Slide 3: Custom Design for Slide 3 */}
         <SwiperSlide>
-          <div className="h-screen w-screen bg-cover bg-center relative text-white font-serif" 
-          style={{backgroundImage: `url(${backgroundImage3})`}}>
-
+          <div
+            className="h-screen w-screen bg-cover bg-center relative text-white font-serif"
+            style={{
+              backgroundImage: `url(${backgroundImage3})`,
+            }}
+          >
+            {/* Overlay Content */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-4 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
+                Discover Global Cuisine
+              </h2>
+              <p className="mt-4 text-lg sm:text-xl lg:text-2xl max-w-3xl leading-relaxed">
+                From street food in Thailand to pasta in Italy, taste the world’s finest dishes and immerse yourself in the culture.
+              </p>
+              <Link to="/discover">
+                <button className="mt-8 px-6 py-3 bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
+                  Discover More
+                </button>
+              </Link>
+            </div>
           </div>
-
         </SwiperSlide>
-
-
-
       </Swiper>
     </div>
   );
