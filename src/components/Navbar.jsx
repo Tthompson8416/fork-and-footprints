@@ -23,10 +23,10 @@ function Navbar() {
     >
       <div className="w-full flex items-center justify-between">
         {/* Left side */}
-        <h1 className="text-xl xs:text-[16px] lg:text-4xl pl-2 xs:whitespace-nowrap xs:p-0">Fork & Footprints</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-3xl pl-2 xs:whitespace-nowrap xs:p-0">Fork & Footprints</h1>
 
         {/* Right side */}
-        <ul className="flex gap-8 pr-2 font-thin text-lg xs:text-sm xs:ml-7 sm:text-xl md:text-2xl lg:text-3xl xs:whitespace-nowrap xs:gap-3">
+        <ul className="flex gap-8 pr-2 font-thin text-lg xs:text-sm xs:ml-7 sm:text-xl md:text-2xl lg:text-2xl lg:gap-8 xs:whitespace-nowrap xs:gap-3">
           <li>
             <Link to="/" className="hover:text-yellow-300">
               Home

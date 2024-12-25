@@ -31,7 +31,7 @@ const Home = () => {
         {/* Slide 1: Original Homepage Content */}
         <SwiperSlide>
           <div
-            className="h-screen xs:h-[1367px] xs:mb-48 mr-20 w-screen bg-cover bg-center text-white relative font-serif"
+            className="h-screen xs:mb-48 mr-20 w-screen bg-cover bg-center text-white relative font-serif"
             style={{
               backgroundImage: `url(${backgroundImage})`,
             }}
@@ -51,8 +51,8 @@ const Home = () => {
 
             {/* Quote in the Bottom Right */}
             <div
-              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[400px] xs:text-md sm:w-[450px] sm:p-12 md:w-[570px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl 3xl:mb-36 xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-900 ease-in-out ${
-                isQuoteVisible ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-[20%] md:translate-x-[30%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[130%]" : "translate-x-[450%]"
+              className={`absolute bottom-10 right-0 w-[600px] left-36 text-xl xs:p-12 xs:mb-16 xs:w-[420px] xs:text-sm sm:w-[550px] sm:p-12 sm:text-lg md:w-[520px] md:text-1xl md:p-12 lg:w-[600px] xl:text-2xl 3xl:text-3xl  xl:w-[710px] 3xl:w-[900px] font-thin italic opacity-80 transition-transform duration-900 ease-in-out ${
+                isQuoteVisible ? "translate-x-0 xs:translate-x-[-35%] sm:translate-x-0 md:translate-x-[40%] lg:translate-x-[55%] xl:translate-x-[65%] 2xl:translate-x-[100%] 3xl:translate-x-[95%]" : "translate-x-[450%]"
               }`}
             >
               <p>
