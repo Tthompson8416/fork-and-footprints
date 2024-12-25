@@ -7,6 +7,7 @@ import backgroundImage from "../assets/images/homepage-background.jpg";
 import backgroundImage2 from "../assets/images/spice-bowl.jpg";
 import backgroundImage3 from "../assets/images/worldmap-food.jpg";
 import forkImage from "../assets/images/fork.png";
+import footImage from "../assets/images/footprints.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -79,49 +80,46 @@ const Home = () => {
           </div>
         </SwiperSlide>
 
-        {/* Slide 2: Custom Design for Slide 2 */}
-        <SwiperSlide>
-          {/* Slide Background */}
-          <div
-            className="h-screen w-screen bg-cover bg-center relative text-white font-serif"
-            style={{
-              backgroundImage: `url(${backgroundImage2})`, // Update path
-            }}
-          >
-            {/* Fork Icon */}
-            <div
-              className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
-                isForkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-              }`}
-            >
-              <img
-                src={forkImage} // Fork icon
-                alt="Fork Icon"
-                className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
-              />
-            </div>
+        {/* Slide 2: Updated Layout with Fork Icon */}
+<SwiperSlide>
+  <div
+    className="h-screen w-screen bg-cover bg-center bg-no-repeat relative text-white font-serif"
+    style={{
+      backgroundImage: `url(${backgroundImage2})`,
+    }}
+  >
+    {/* Fork Icon */}
+    <div
+      className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
+        isForkVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+      }`}
+    >
+      <img
+        src={forkImage} // Fork icon
+        alt="Fork Icon"
+        className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
+      />
+    </div>
 
-            {/* Transparent Rectangle */}
-            <div className="absolute max-w-[80%] w-[900px] h-[320px] md:max-w-[60%] 3xl:h-[350px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg xs:text-blue-700 sm:text-red-700 md:text-gray-600 lg:text-yellow-500 xl:text-green-600 2xl:text-pink-400 3xl:text-purple-900">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl uppercase tracking-wider mt-8">
-                Explore Recipes
-              </h2>
-              <p className="text-xl sm:text-2xl lg:text-3xl 3xl:text-4xl mt-8 md:mt-12 px-10 pb-12 xs:pb-8 leading-relaxed">
-                A collection of recipes inspired from the places I have visited.
-              </p>
-              {/* Button */}
-              <Link to="/recipes">
-                <button
-                  onClick={() => console.log("Navigate to recipes page")}
-                  className="w-[130px] h-[50px] xs:h-[40px] lg:w-[150px] 3xl:w-[170px] 3xl:h-[60px] lg:text-lg 3xl:text-xl sm:mt-4 lg:mt-8 lg:pb-8 3xl:pb-2 px-2 py-2 mt-[-10px] bg-custom-accent text-white text-sm rounded-lg border-2 border-white hover:bg-opacity-90 whitespace-nowrap"
-                >
-                  Explore Recipes
-                </button>
-              </Link>
-            </div>
-          </div>
-        </SwiperSlide>
-
+    {/* Overlay Content */}
+    <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-8">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wider text-center">
+        Explore Recipes
+      </h2>
+      <p className="text-lg sm:text-xl lg:text-2xl mt-6 text-center leading-relaxed max-w-3xl">
+        A collection of recipes inspired from the places I have visited.
+      </p>
+      {/* Button */}
+      <Link to="/recipes">
+      <button
+  className="px-4 py-2 bg-custom-accent mt-8 text-white text-lg font-medium rounded-lg hover:bg-opacity-80 transition-all duration-300"
+>
+  Explore Recipes
+</button>
+      </Link>
+    </div>
+  </div>
+</SwiperSlide>
         {/* Slide 3: Custom Design for Slide 3 */}
         <SwiperSlide>
           <div
@@ -130,6 +128,20 @@ const Home = () => {
               backgroundImage: `url(${backgroundImage3})`,
             }}
           >
+
+             {/* Footprint Icon */}
+    <div
+      className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
+        isForkVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+      }`}
+    >
+      <img
+        src={footImage} // Footprint icon
+        alt="Footprint Icon"
+        className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
+      />
+    </div>
+
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-4 text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
