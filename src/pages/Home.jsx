@@ -78,13 +78,13 @@ const Home = () => {
           >
             {/* Fork Icon */}
             <div
-              className="absolute top-3 right-2 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 animate-pop-in"
+              className="absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 animate-pop-in"
               style={{ animationDelay: "10s" }}
             >
               <img
                 src={forkImage} // Fork icon
                 alt="Fork Icon"
-                className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16"
+                className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
               />
             </div>
 
