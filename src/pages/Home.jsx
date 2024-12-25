@@ -5,6 +5,7 @@ import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
 import backgroundImage from "../assets/images/homepage-background.jpg";
 import backgroundImage2 from "../assets/images/spice-bowl.jpg";
+import backgroundImage3 from "../assets/images/worldmap-food.jpg";
 import forkImage from "../assets/images/fork.png";
 import { Link } from "react-router-dom";
 
@@ -120,6 +121,18 @@ const Home = () => {
             </div>
           </div>
         </SwiperSlide>
+              
+        {/* Slide 3: Custom Design for Slide 3 */}
+        <SwiperSlide>
+          <div className="h-screen w-screen bg-cover bg-center relative text-white font-serif" 
+          style={{backgroundImage: `url(${backgroundImage3})`}}>
+
+          </div>
+
+        </SwiperSlide>
+
+
+
       </Swiper>
     </div>
   );
