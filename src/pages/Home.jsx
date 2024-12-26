@@ -169,7 +169,7 @@ const Home = () => {
                 From street food in Thailand to pasta in Italy, taste the
                 world’s finest dishes and immerse yourself in the culture.
               </p>
-              <Link to="/discover">
+              <Link to="/worldmap">
                 <button className="mt-8 px-6 py-3 bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
                   Discover More
                 </button>

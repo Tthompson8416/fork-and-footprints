@@ -33,13 +33,13 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/worldmap" className="hover:text-yellow-300">
-              World Map
+            <Link to="/recipes" className="hover:text-yellow-300">
+              Recipes
             </Link>
           </li>
           <li>
-            <Link to="/recipes" className="hover:text-yellow-300">
-              Recipes
+            <Link to="/worldmap" className="hover:text-yellow-300">
+              World Map
             </Link>
           </li>
         </ul>
