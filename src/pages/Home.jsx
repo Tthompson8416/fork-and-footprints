@@ -12,7 +12,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isQuoteVisible, setIsQuoteVisible] = useState(false);
-  const [isForkVisible, setIsForkVisible] = useState(false); // New state for fork visibility
+  const [isForkVisible, setIsForkVisible] = useState(false); // Fork visibility state
+  const [isFootprintVisible, setIsFootprintVisible] = useState(false); // Footprint visibility state
+  const [activeSlide, setActiveSlide] = useState(0); // Track the active slide
 
   // Control the quote visibility
   useEffect(() => {
@@ -23,14 +25,26 @@ const Home = () => {
     return () => clearTimeout(quoteTimer);
   }, []);
 
-  // Control the fork visibility
-  useEffect(() => {
-    const forkTimer = setTimeout(() => {
-      setIsForkVisible(true);
-    }, 2500); // 10-second delay
+  // Handle slide change to trigger fork and footprint visibility
+  const handleSlideChange = (swiper) => {
+    const currentSlide = swiper.realIndex;
+    setActiveSlide(currentSlide);
 
-    return () => clearTimeout(forkTimer);
-  }, []);
+    clearTimeout(window.iconVisibilityTimer);
+
+    if (currentSlide === 1) {
+      window.iconVisibilityTimer = setTimeout(() => {
+        setIsForkVisible(true);
+      }, 1000);
+    } else if (currentSlide === 2) {
+      window.iconVisibilityTimer = setTimeout(() => {
+        setIsFootprintVisible(true);
+      }, 1000);
+    } else {
+      setIsForkVisible(false); // Hide fork if not on slide 2
+      setIsFootprintVisible(false); // Hide footprint if not on slide 3
+    }
+  };
 
   return (
     <div className="h-screen w-screen">
@@ -40,6 +54,7 @@ const Home = () => {
         className="h-screen w-screen right-8 top-8"
         slidesPerView={1}
         loop={true}
+        onSlideChange={handleSlideChange} // Track slide change
       >
         {/* Slide 1: Original Homepage Content */}
         <SwiperSlide>
@@ -49,6 +64,8 @@ const Home = () => {
               backgroundImage: `url(${backgroundImage})`,
             }}
           >
+            {/* You can display the activeSlide here */}
+            
             {/* Transparent Rectangle */}
             <div className="absolute max-w-[80%] w-[900px] h-[300px] top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 mb-8 text-center rounded-lg 3xl:w-[850px] 3xl:h-[450px] 3xl:mt-36">
               <h1 className="text-3xl text-white xs:text-2xl md:text-4xl 3xl:text-5xl 3xl:mt-0 3xl:pt-24 lg:text-5xl uppercase tracking-wider mt-12">
@@ -81,45 +98,44 @@ const Home = () => {
         </SwiperSlide>
 
         {/* Slide 2: Updated Layout with Fork Icon */}
-<SwiperSlide>
-  <div
-    className="h-screen w-screen bg-cover bg-center bg-no-repeat relative text-white font-serif"
-    style={{
-      backgroundImage: `url(${backgroundImage2})`,
-    }}
-  >
-    {/* Fork Icon */}
-    <div
-      className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
-        isForkVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
-      }`}
-    >
-      <img
-        src={forkImage} // Fork icon
-        alt="Fork Icon"
-        className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
-      />
-    </div>
+        <SwiperSlide>
+          <div
+            className="h-screen w-screen bg-cover bg-center bg-no-repeat relative text-white font-serif"
+            style={{
+              backgroundImage: `url(${backgroundImage2})`,
+            }}
+          >
+            {/* Fork Icon */}
+            <div
+              className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
+                isForkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
+            >
+              <img
+                src={forkImage} // Fork icon
+                alt="Fork Icon"
+                className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
+              />
+            </div>
 
-    {/* Overlay Content */}
-    <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-8">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wider text-center">
-        Explore Recipes
-      </h2>
-      <p className="text-lg sm:text-xl lg:text-2xl mt-6 text-center leading-relaxed max-w-3xl">
-        A collection of recipes inspired from the places I have visited.
-      </p>
-      {/* Button */}
-      <Link to="/recipes">
-      <button
-  className="px-4 py-2 bg-custom-accent mt-8 text-white text-lg font-medium rounded-lg hover:bg-opacity-80 transition-all duration-300"
->
-  Explore Recipes
-</button>
-      </Link>
-    </div>
-  </div>
-</SwiperSlide>
+            {/* Overlay Content */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-8">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wider text-center">
+                Explore Recipes
+              </h2>
+              <p className="text-lg sm:text-xl lg:text-2xl mt-6 text-center leading-relaxed max-w-3xl">
+                A collection of recipes inspired from the places I have visited.
+              </p>
+              {/* Button */}
+              <Link to="/recipes">
+                <button className="px-4 py-2 bg-custom-accent mt-8 text-white text-lg font-medium rounded-lg hover:bg-opacity-80 transition-all duration-300">
+                  Explore Recipes
+                </button>
+              </Link>
+            </div>
+          </div>
+        </SwiperSlide>
+
         {/* Slide 3: Custom Design for Slide 3 */}
         <SwiperSlide>
           <div
@@ -128,19 +144,21 @@ const Home = () => {
               backgroundImage: `url(${backgroundImage3})`,
             }}
           >
-
-             {/* Footprint Icon */}
-    <div
-      className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
-        isForkVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
-      }`}
-    >
-      <img
-        src={footImage} // Footprint icon
-        alt="Footprint Icon"
-        className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
-      />
-    </div>
+           
+            {/* Footprint Icon */}
+            <div
+              className={`absolute top-3 right-2 3xl:mr-12 bg-custom-accent p-4 sm:mr-3 rounded-full z-10 transition-all duration-500 ${
+                isFootprintVisible
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-50"
+              }`}
+            >
+              <img
+                src={footImage} // Footprint icon
+                alt="Footprint Icon"
+                className="h-6 w-6 sm:h-12 sm:w-12 xl:w-16 xl:h-16 3xl:w-24 3xl:h-24"
+              />
+            </div>
 
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-4 text-center">
@@ -148,7 +166,8 @@ const Home = () => {
                 Discover Global Cuisine
               </h2>
               <p className="mt-4 text-lg sm:text-xl lg:text-2xl max-w-3xl leading-relaxed">
-                From street food in Thailand to pasta in Italy, taste the world’s finest dishes and immerse yourself in the culture.
+                From street food in Thailand to pasta in Italy, taste the
+                world’s finest dishes and immerse yourself in the culture.
               </p>
               <Link to="/discover">
                 <button className="mt-8 px-6 py-3 bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
