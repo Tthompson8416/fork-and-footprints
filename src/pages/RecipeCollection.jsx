@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 
 function RecipeCollection() {
   return (
-    <div className="bg-white w-screen h-screen">
-      <img src={HeroImage} alt="Hero Image" className="w-full h-auto max-h-[600px] object-contain mb-8 bg-white" />
+    <div className="bg-white w-screen h-screen ml-[-32px] p-6">
+      <img src={HeroImage} alt="Hero Image" className="w-full h-auto max-h-[600px] object-contain mb-8 mt-12 bg-white" />
       <p className="text-lg mb-4">Discover recipes inspired by global cuisines. From Italian pasta to Thai curry, find something to cook and enjoy!</p>
       <ul className="list-disc pl-5 space-y-2">
         <li>Classic French Ratatouille</li>
