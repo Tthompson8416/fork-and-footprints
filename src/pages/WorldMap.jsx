@@ -1,3 +1,11 @@
+import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css"; // Base Swiper styles
+import "swiper/css/pagination"; // Pagination styles
+import HeroImage2 from "../assets/images/globe.jpg";
+import { Link } from "react-router-dom";
+
 function WorldMap() {
   return (
     <div>
@@ -5,9 +13,9 @@ function WorldMap() {
       <p className="text-lg mb-4">Click on a country to discover its culinary traditions, unique recipes, and travel stories.
       </p>
       <img 
-      src="https://via.placeholder.com/600x300"
+      src={HeroImage2}
       alt="World Map"
-      className="rounded-lg" 
+      className="rounded-lg w-screen h-screen " 
       />
     </div>
   );

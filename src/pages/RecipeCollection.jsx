@@ -3,24 +3,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
-import HeroImage from "../assets/images/recipes-hero.png";
-import forkImage from "../assets/images/fork.png";
 import { Link } from "react-router-dom";
+import { countries } from "./recipe-cards";
+import CountryCard from "./recipe-card-container";
+import HeroImage1 from "../assets/images/recipes-hero.png";
 
-
-function RecipeCollection() {
+const RecipeCollection = () => {
   return (
-    <div className="bg-white w-screen h-screen ml-[-32px] p-6">
-      <img src={HeroImage} alt="Hero Image" className="w-full h-auto max-h-[600px] object-contain mb-8 mt-12 bg-white" />
-      <p className="text-lg mb-4">Discover recipes inspired by global cuisines. From Italian pasta to Thai curry, find something to cook and enjoy!</p>
-      <ul className="list-disc pl-5 space-y-2">
-        <li>Classic French Ratatouille</li>
-        <li>Authentic Japanese Ramen</li>
-        <li>Spicy Indian Butter Chicken</li>
-      </ul>
+    <div className="bg-green-100 min-h-screen w-full overflow-hidden p-0">
+      <div>
+        <img
+          src={HeroImage1}
+          alt="recipes-text-on-cutting-board"
+          className="relative top-16 left-0 w-full h-[550px] object-cover"
+        />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-36 mb-24 p-8">
+        {countries.map((country) => (
+          <CountryCard
+            key={country.id}
+            name={country.name}
+            image={country.image}
+            pageLink={country.pageLink}
+          />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default RecipeCollection;
-  

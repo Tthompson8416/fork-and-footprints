@@ -5,6 +5,7 @@ import WorldMap from "./pages/WorldMap";
 import CountryDetail from "./pages/CountryDetail";
 import RecipeCollection from "./pages/RecipeCollection";
 
+
 function App() {
   return (
     <Router basename="/fork-and-footprints">

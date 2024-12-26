@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%; 
+  width: 100%;
   overflow-x: hidden;
+  background-color: #ffffff; /* Or whatever color you want */
 }
 @keyframes pop-in {
   0% {
