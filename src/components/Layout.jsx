@@ -25,7 +25,7 @@ function Layout({ children }) {
       <main className="flex-grow">{children}</main>
 
       {/* Footer at the bottom */}
-      <footer className="p-4 bg-custom-accent text-center text-white xs:text-sm text-xl lg:text-lg 2xl:text-xl whitespace-nowrap">
+      <footer className="p-4 bg-custom-accent text-center text-white xs:text-xs text-xl lg:text-lg 2xl:text-xl whitespace-nowrap">
         <p>&copy; 2024 Fork & Footprints. All rights reserved.</p>
       </footer>
     </div>

@@ -15,10 +15,11 @@ const RecipeCollection = () => {
         <img
           src={HeroImage1}
           alt="recipes-text-on-cutting-board"
-          className="relative top-16 left-0 w-full h-[550px] object-cover"
+          className="relative left-0 w-full h-[550px] object-contain
+          xs:h-[300px] 3xl:object-cover"
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-36 mb-24 p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-0 3xl:mt-36 mb-24 p-4">
         {countries.map((country) => (
           <CountryCard
             key={country.id}
