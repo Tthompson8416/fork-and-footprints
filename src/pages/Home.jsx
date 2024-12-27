@@ -64,18 +64,18 @@ const Home = () => {
               backgroundImage: `url(${backgroundImage})`,
             }}
           >
-            <div className="absolute max-w-[85%] w-[900px] h-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
-              <h1 className="relative mt-8 mb-4 md:mt-6 md:mb-8 text-white text-xl sm:text-4xl uppercase tracking-wider sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
+            <div className="absolute max-w-[85%] w-[900px] h-[300px] xl:h-[400px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
+              <h1 className="relative mt-8 mb-6 md:mt-12 md:mb-8 xl:mb-16 text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider">
                 Fork & Footprints
               </h1>
-              <p className="w-screen text-lg sm:text-3xl pr-36 pl-8 md:pr-48 md:pl-8 leading-relaxed">
+              <p className="w-screen pr-24 pl-6 sm:pr-32 sm:pl-4 md:pl-2 md:pr-40 lg:ml-28 lg:w-[850px] text-lg sm:text-2xl md:text-3xl xl:text-4xl leading-relaxed">
                 Explore the world, one bite at a time.
                 Come join me on my culinary journey across Europe as I show you
                 beautiful places and their tasty cuisine.
               </p>
             </div>
             <div
-              className={`absolute bottom-10 right-15 ml-12 mb-8 text-lg italic opacity-80 transition-transform duration-700 ease-in-out ${
+              className={`absolute bottom-10 right-15 ml-12 mb-8 text-lg sm:text-xl md:text-2xl xl:text-3xl italic opacity-80 transition-transform duration-700 ease-in-out ${
                 isQuoteVisible ? "translate-x-0" : "translate-x-[450%]"
               }`}
             >
