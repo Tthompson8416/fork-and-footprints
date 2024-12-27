@@ -68,7 +68,7 @@ const Home = () => {
               <h1 className="relative mt-8 mb-4 text-xl text-white md:text-4xl uppercase tracking-wider md:mt-12 sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
                 Fork & Footprints
               </h1>
-              <p className="w-screen text-lg md:text-3xl pr-14 leading-relaxed">
+              <p className="w-screen text-lg md:text-3xl pr-24 pl-8 leading-relaxed">
                 Explore the world, one bite at a time.
                 Come join me on my culinary journey across Europe as I show you
                 beautiful places and their tasty cuisine.
