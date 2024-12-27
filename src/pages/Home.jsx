@@ -65,10 +65,10 @@ const Home = () => {
             }}
           >
             <div className="absolute max-w-[85%] w-[900px] h-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
-              <h1 className="relative mt-8 mb-4 text-xl text-white md:text-4xl uppercase tracking-wider md:mt-12 sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
+              <h1 className="relative mt-8 mb-4 text-white text-xl sm:text-4xl md:text-4xl uppercase tracking-wider md:mt-12 sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
                 Fork & Footprints
               </h1>
-              <p className="w-screen text-lg md:text-3xl pr-24 pl-8 leading-relaxed">
+              <p className="w-screen text-lg sm:text-3xl md:text-3xl pr-36 pl-8 leading-relaxed">
                 Explore the world, one bite at a time.
                 Come join me on my culinary journey across Europe as I show you
                 beautiful places and their tasty cuisine.
