@@ -150,7 +150,7 @@ const Home = () => {
                 world’s finest dishes and immerse yourself in the culture.
               </p>
               <Link to="/worldmap">
-                <button className="mt-8 px-6 py-3 bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
+                <button className="mt-8 px-6 py-3 ml-6 tracking-wider bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
                   Discover More
                 </button>
               </Link>
