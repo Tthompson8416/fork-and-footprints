@@ -9,10 +9,13 @@ function Layout({ children }) {
   const noBackgroundRoutes = ['/recipes', '/worldmap'];
   const hasNoBackground = noBackgroundRoutes.includes(location.pathname);
 
+  // Check if the current route is the Home route
+  const isHomeRoute = location.pathname === '/';
+
   return (
     <div
       className={`relative flex flex-col min-h-screen font-sans m-0 p-0 ${
-        hasNoBackground ? '' : 'bg-white'
+        hasNoBackground || isHomeRoute ? '' : 'bg-white'
       }`}
     >
       {/* Navbar at the top */}
