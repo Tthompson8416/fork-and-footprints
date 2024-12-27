@@ -65,17 +65,17 @@ const Home = () => {
             }}
           >
             <div className="absolute max-w-[80%] w-[900px] h-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
-              <h1 className="text-3xl text-white md:text-4xl uppercase tracking-wider mt-12">
+              <h1 className="relative mt-16 mb-12 text-xl text-white md:text-4xl uppercase tracking-wider md:mt-12 sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
                 Fork & Footprints
               </h1>
-              <p className="text-xl md:text-3xl mt-8 px-12 leading-relaxed">
-                Explore the world, one bite at a time. <br />
+              <p className="text-lg md:text-3xl mt-4 pr-8 pl-8 leading-relaxed">
+                Explore the world, one bite at a time.
                 Come join me on my culinary journey across Europe as I show you
                 beautiful places and their tasty cuisine.
               </p>
             </div>
             <div
-              className={`absolute bottom-10 right-10 text-xl italic opacity-80 transition-transform duration-700 ease-in-out ${
+              className={`absolute bottom-10 right-15 ml-12 mb-16 text-xl italic opacity-80 transition-transform duration-700 ease-in-out ${
                 isQuoteVisible ? "translate-x-0" : "translate-x-[450%]"
               }`}
             >
