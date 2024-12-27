@@ -1,69 +1,83 @@
+import belgiumImage from '../assets/images/pic-6.jpg';
+import belizeImage from '../assets/images/pic-2.jpg';
+import canadaImage from '../assets/images/pic-11.jpg';
+import croatiaImage from '../assets/images/pic-9.jpg';
+import franceImage from '../assets/images/pic-10.jpg';
+import germanyImage from '../assets/images/pic-4.jpg';
+import italyImage from '../assets/images/pic-5.jpg';
+import mexicoImage from '../assets/images/pic-8.jpg';
+import netherlandsImage from '../assets/images/pic-1.jpg';
+import portugalImage from '../assets/images/pic-3.jpg';
+import spainImage from '../assets/images/pic-7.jpg';
+
+
+
 export const countries = [
   {
     id: 1,
     name: 'Belgium',
-    image: 'https://via.placeholder.com/300x200?text=Belgium', // Placeholder image
+    image: belgiumImage, // Placeholder image
     pageLink: '/belgium',
   },
   {
     id: 2,
     name: 'Belize',
-    image: 'https://via.placeholder.com/300x200?text=Belize', // Placeholder image
+    image: belizeImage, // Placeholder image
     pageLink: '/belize',
   },
   {
     id: 3,
     name: 'Canada',
-    image: 'https://via.placeholder.com/300x200?text=Canada', // Placeholder image
+    image: canadaImage, // Placeholder image
     pageLink: '/canada',
   },
   {
     id: 4,
     name: 'Croatia',
-    image: 'https://via.placeholder.com/300x200?text=Croatia', // Placeholder image
+    image: croatiaImage, // Placeholder image
     pageLink: '/croatia',
   },
   {
     id: 5,
     name: 'France',
-    image: 'https://via.placeholder.com/300x200?text=France', // Placeholder image
+    image: franceImage, // Placeholder image
     pageLink: '/france',
   },
   {
     id: 6,
     name: 'Germany',
-    image: 'https://via.placeholder.com/300x200?text=Germany', // Placeholder image
+    image: germanyImage, // Placeholder image
     pageLink: '/germany',
   },
   {
     id: 7,
     name: 'Italy',
-    image: 'https://via.placeholder.com/300x200?text=Italy', // Placeholder image
+    image: italyImage, // Placeholder image
     pageLink: '/italy',
   },
   {
     id: 8,
     name: 'Mexico',
-    image: 'https://via.placeholder.com/300x200?text=Mexico', // Placeholder image
+    image: mexicoImage, // Placeholder image
     pageLink: '/mexico',
   }
   ,{
 
     id: 9,
     name: 'Netherlands',
-    image: 'https://via.placeholder.com/300x200?text=Netherlands', // Placeholder image
+    image: netherlandsImage, // Placeholder image
     pageLink: '/netherlands',
   },
   {
     id: 10,
     name: 'Portugal',
-    image: 'https://via.placeholder.com/300x200?text=Portugal', // Placeholder image
+    image: portugalImage, // Placeholder image
     pageLink: '/portugal',
   },
   {
     id: 11,
     name: 'Spain',
-    image: 'https://via.placeholder.com/300x200?text=Spain', // Placeholder image
+    image: spainImage, // Placeholder image
     pageLink: '/spain',
   }
 ];
