@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         'custom-accent': '#707755',
+        'custom-cream': '#fcf4e9',
       },
       animation: {
         'pop-in': 'popIn 0.5s ease-out',

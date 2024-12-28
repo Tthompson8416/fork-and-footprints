@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
@@ -10,7 +9,7 @@ import HeroImage1 from "../assets/images/recipes-hero.png";
 
 const RecipeCollection = () => {
   return (
-    <div className="bg-green-100 min-h-screen w-full overflow-hidden p-0">
+    <div className="bg-custom-cream min-h-screen w-full overflow-hidden p-0">
       <img
         src={HeroImage1}
         alt="recipes-text-on-cutting-board"
