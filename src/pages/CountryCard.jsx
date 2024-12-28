@@ -6,11 +6,11 @@ const CountryCard = ({ name, image, pageLink }) => {
         alt={name}
         className="w-[clamp(160px, 40vw, 700px)] h-[clamp(160px, 40vw, 600px)] object-contain sm:h-[150px] sm:object-cover sm:w-[300px] md:w-[375px] md:h-[230px] 2xl:w-[540px] 2xl:h-[300px] rounded-t-lg"
       />
-      <h1 className="text-[clamp(1rem, 2.5vw, 2.5rem)] font-bold font-serif mt-4 text-center text-black text-[1.5rem] sm:text-[1.7rem] lg:text-[2rem] sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
+      <h1 className="text-[clamp(1rem, 2.5vw, 2.5rem)] font-bold font-serif mt-4 text-center text-custom-accent text-[1.5rem] sm:text-[1.7rem] lg:text-[2rem]">
         {name}
       </h1>
       <button
-        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-500 text-white rounded hover:bg-blue-600 mx-auto block"
+        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
         onClick={() => (window.location.href = pageLink)}
       >
         Learn More
