@@ -6,7 +6,7 @@ const CountryCard = ({ name, image, pageLink }) => {
         alt={name}
         className="w-[clamp(160px, 40vw, 700px)] h-[clamp(160px, 40vw, 600px)] object-contain sm:h-[150px] sm:object-cover sm:w-[300px] md:w-[375px] md:h-[230px] 2xl:w-[540px] 2xl:h-[300px] rounded-t-lg"
       />
-      <h1 className="text-[clamp(1rem, 2.5vw, 1.5rem)] font-bold mt-4 text-center text-black sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
+      <h1 className="text-[clamp(1rem, 2.5vw, 2.5rem)] font-bold font-serif mt-4 text-center text-black text-[1.5rem] sm:text-[1.7rem] lg:text-[2rem] sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
         {name}
       </h1>
       <button
