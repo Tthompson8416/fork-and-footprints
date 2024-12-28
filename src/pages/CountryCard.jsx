@@ -10,7 +10,7 @@ const CountryCard = ({ name, image, pageLink }) => {
         {name}
       </h1>
       <button
-        className="mt-4 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] bg-blue-500 text-white rounded hover:bg-blue-600 mx-auto block"
+        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-500 text-white rounded hover:bg-blue-600 mx-auto block"
         onClick={() => (window.location.href = pageLink)}
       >
         Learn More
