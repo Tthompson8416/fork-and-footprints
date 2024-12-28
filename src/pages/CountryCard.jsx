@@ -4,7 +4,7 @@ const CountryCard = ({ name, image, pageLink }) => {
       <img
         src={image}
         alt={name}
-        className="w-[clamp(160px, 40vw, 500px)] h-[clamp(160px, 40vw, 500px)] object-contain sm:h-[150px] sm:object-cover sm:w-[300px] rounded-t-lg"
+        className="w-[clamp(160px, 40vw, 500px)] h-[clamp(160px, 40vw, 500px)] object-contain sm:h-[150px] sm:object-cover sm:w-[300px] md:w-[375px] md:h-[230px] rounded-t-lg"
       />
       <h1 className="text-[clamp(1rem, 2.5vw, 1.5rem)] font-bold mt-4 text-center text-black sm:text-red-500 md:text-blue-500 lg:text-yellow-500 xl:text-green-500 2xl:text-purple-600 3xl:text-orange-400">
         {name}
