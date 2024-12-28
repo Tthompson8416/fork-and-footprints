@@ -1,6 +1,6 @@
 const CountryCard = ({ name, image, pageLink }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 max-w-[clamp(280px, 90%, 350px)] mx-auto">
+    <div className="bg-white shadow-lg rounded-lg p-4 pb-12 mb-12 max-w-[clamp(280px, 90%, 350px)] mx-auto">
       <img
         src={image}
         alt={name}
