@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
@@ -6,8 +8,17 @@ import { Link } from "react-router-dom";
 import { countries } from "./recipe-cards";
 import CountryCard from "./CountryCard";
 import HeroImage1 from "../assets/images/recipes-hero.png";
+import { use } from "react";
 
 const RecipeCollection = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="bg-custom-cream min-h-screen w-full overflow-hidden p-0">
       <img
@@ -23,6 +34,7 @@ const RecipeCollection = () => {
             name={country.name}
             image={country.image}
             pageLink={country.pageLink}
+            aosAnimation="fade-up"
           />
         ))}
       </div>
