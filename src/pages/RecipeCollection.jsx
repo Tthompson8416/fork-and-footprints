@@ -5,7 +5,7 @@ import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
 import { Link } from "react-router-dom";
 import { countries } from "./recipe-cards";
-import CountryCard from "./recipe-card-container";
+import CountryCard from "./CountryCard";
 import HeroImage1 from "../assets/images/recipes-hero.png";
 
 const RecipeCollection = () => {
