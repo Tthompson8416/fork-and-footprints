@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    // Redirect unknown routes to index.html with their full path
+    const pathname = window.location.pathname.replace('/fork-and-footprints', '');
+    window.location.replace(`/fork-and-footprints${pathname}`);
+  </script>
+</head>
+<body></body>
+</html>
