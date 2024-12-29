@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
 
-  /* const handlebuttonClick = () => {
+  const handlebuttonClick = () => {
     const url = `/recipes/country#${name.toLowerCase()}`;
     window.open(url, "_blank");
-  }; */
+  };
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 pb-12 mb-12 max-w-[clamp(280px, 90%, 350px)] mx-auto"
