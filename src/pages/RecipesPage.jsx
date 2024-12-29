@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Divider from "../components/Divider"; 
+
 
 const RecipesPage = () => {
   const countries = [
@@ -33,12 +35,13 @@ const RecipesPage = () => {
       {countries.map((country, index) => (
         <div
           key={country.id}
-          id={country.name.toLowerCase()} // Set the ID to the lowercase country name
+          id={country.name.toLowerCase()} 
           className="py-16 px-8"
         >
-          <h2 className="text-2xl font-bold text-black text-center">
-            {country.name}
-          </h2>
+          <Divider country={country} /> {/* Use the Divider component */}
+          <div className="py-8">
+            <h2 className="text-2xl font-bold text-black text-center">{country.name}</h2>
+          </div>
           {index < countries.length - 1 && (
             <div className="border-t border-gray-300 my-8"></div>
           )}
