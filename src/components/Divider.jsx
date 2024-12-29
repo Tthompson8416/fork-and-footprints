@@ -57,7 +57,7 @@ const Divider = ({ country }) => {
   return (
     <div className="bg-blue-500 text-white py-4 flex items-center justify-center space-x-12">
       {imageSrc && (
-        <img src={imageSrc} alt={country.name} className="w-36 h-24" />
+        <img src={imageSrc} alt={country.name} className="w-24 h-16 sm:w-36 sm:h-24" />
       )}
       <span className="text-4xl font-semibold">{country.name}</span>
     </div>
