@@ -11,12 +11,10 @@ import mexicoFlag from "../assets/flags/mexico.svg";
 import netherlandsFlag from "../assets/flags/netherlands.svg";
 import portugalFlag from "../assets/flags/portugal.svg";
 import spainFlag from "../assets/flags/spain.svg";
-// Add other imports similarly...
 
 const Divider = ({ country }) => {
   let imageSrc;
 
-  // Dynamically set the images based on the country name
   switch (country.name.toLowerCase()) {
     case "belgium":
       imageSrc = belgiumFlag;
@@ -57,11 +55,11 @@ const Divider = ({ country }) => {
   }
 
   return (
-    <div className="bg-blue-500 text-white py-6 flex items-center justify-center space-x-4">
+    <div className="bg-blue-500 text-white py-4 flex items-center justify-center space-x-12">
       {imageSrc && (
-        <img src={imageSrc} alt={country.name} className="w-12 h-12" />
+        <img src={imageSrc} alt={country.name} className="w-36 h-24" />
       )}
-      <span className="text-xl font-semibold">{country.name}</span>
+      <span className="text-4xl font-semibold">{country.name}</span>
     </div>
   );
 };
