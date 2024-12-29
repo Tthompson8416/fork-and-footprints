@@ -22,8 +22,7 @@ const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
 
       <button
         className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
-        onClick={() => (window.location.href = `/fork-and-footprints/recipes/recipe1`)}
-      >
+        onClick={() => (window.location.href = pageLink)}      >
         Recipe 1
       </button>
     </div>

@@ -1,16 +1,96 @@
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Pagination } from "swiper/modules";
 import "swiper/css"; // Base Swiper styles
 import "swiper/css/pagination"; // Pagination styles
-import { Link } from "react-router-dom";
-import { countries } from "./recipe-cards";
+import { countries } from "./recipe-cards"; // Make sure this array is updated with pageLink
 import CountryCard from "./CountryCard";
 import HeroImage1 from "../assets/images/recipes-hero.png";
-import { use } from "react";
+
+import belgiumFlag from '../assets/flags/belgium.svg';
+import belizeFlag from '../assets/flags/belize.svg';
+import canadaFlag from '../assets/flags/canada.svg';
+import croatiaFlag from '../assets/flags/croatia.svg';
+import franceFlag from '../assets/flags/france.svg';
+import germanyFlag from '../assets/flags/germany.svg';
+import italyFlag from '../assets/flags/italy.svg';
+import mexicoFlag from '../assets/flags/mexico.svg';
+import netherlandsFlag from '../assets/flags/netherlands.svg';
+import portugalFlag from '../assets/flags/portugal.svg';
+import spainFlag from '../assets/flags/spain.svg';
+
+
 
 const RecipeCollection = () => {
+  // Example countries array with the first 3 recipes
+  const countries = [
+    {
+      id: 1,
+      name: 'Belgium',
+      image: belgiumFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe1',
+    },
+    {
+      id: 2,
+      name: 'Belize',
+      image: belizeFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe2',
+    },
+    {
+      id: 3,
+      name: 'Canada',
+      image: canadaFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe3',
+    },
+    {
+      id: 4,
+      name: 'Croatia',
+      image: croatiaFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe4',
+    },
+    {
+      id: 5,
+      name: 'France',
+      image: franceFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe5',
+    },
+    {
+      id: 6,
+      name: 'Germany',
+      image: germanyFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe6',
+    },
+    {
+      id: 7,
+      name: 'Italy',
+      image: italyFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe7',
+    },
+    {
+      id: 8,
+      name: 'Mexico',
+      image: mexicoFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe8',
+    },
+    {
+      id: 9,
+      name: 'Netherlands',
+      image: netherlandsFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe9',
+    },
+    {
+      id: 10,
+      name: 'Portugal',
+      image: portugalFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe10',
+    },
+    {
+      id: 11,
+      name: 'Spain',
+      image: spainFlag,
+      pageLink: '/fork-and-footprints/recipes/recipe11',
+    },
+  ];
 
   useEffect(() => {
     AOS.init({
