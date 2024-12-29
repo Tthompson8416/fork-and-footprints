@@ -21,11 +21,11 @@ const RecipesPage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const hash = location.hash.replace("#", ""); // Remove the # from the hash
+    const hash = location.hash.replace("#", ""); 
     if (hash) {
-      const section = document.getElementById(hash); // Get the section by ID
+      const section = document.getElementById(hash); 
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" }); // Scroll to the section
+        section.scrollIntoView({ behavior: "smooth" }); 
       }
     }
   }, [location]);
@@ -38,9 +38,8 @@ const RecipesPage = () => {
           id={country.name.toLowerCase()} 
           className="py-16 px-8"
         >
-          <Divider country={country} /> {/* Use the Divider component */}
+          <Divider country={country} /> 
           <div className="py-8">
-            <h2 className="text-2xl font-bold text-black text-center">{country.name}</h2>
           </div>
           {index < countries.length - 1 && (
             <div className="border-t border-gray-300 my-8"></div>
