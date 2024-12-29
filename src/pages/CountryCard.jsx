@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
-  const handlebuttonClick = () => {
-    const url = `/recipes/country#${name.toLowerCase()}`;
-    window.open(url, "_blank");
-  };
-
+const CountryCard = ({ name, image, recipeLinks, aosAnimation }) => {
   return (
     <div
       className="bg-white shadow-lg rounded-lg p-4 pb-12 mb-12 max-w-[clamp(280px, 90%, 350px)] mx-auto"
@@ -20,11 +15,16 @@ const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
         {name}
       </h1>
 
-      <button
-        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
-        onClick={() => (window.location.href = pageLink)}      >
-        Recipe 1
-      </button>
+      {/* Buttons for Recipes 1-3 */}
+      {recipeLinks.map((link, index) => (
+        <button
+          key={index}
+          className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
+          onClick={() => (window.location.href = link)}
+        >
+          {`Recipe ${index + 1}`} {/* Dynamically naming the button */}
+        </button>
+      ))}
     </div>
   );
 };
