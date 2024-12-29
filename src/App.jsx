@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import WorldMap from "./pages/WorldMap";
 import CountryDetail from "./pages/CountryDetail";
 import RecipeCollection from "./pages/RecipeCollection";
+import RecipesPage from './pages/RecipesPage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/worldmap" element={<WorldMap />} />
           <Route path="/recipes" element={<RecipeCollection />} />
+          <Route path="/recipes" element={<RecipesPage />} />
           <Route path="/country/:id" element={<CountryDetail />} />
         </Routes>
       </Layout>
