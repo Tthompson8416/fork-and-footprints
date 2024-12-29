@@ -2,6 +2,12 @@ import { Link } from 'react-router-dom';
 
 
 const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
+
+  const handlebuttonClick = () => {
+    const url = `/fork-and-footprints/recipes/country#${name.toLowerCase()}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 pb-12 mb-12 max-w-[clamp(280px, 90%, 350px)] mx-auto"
       data-aos={aosAnimation}
@@ -16,8 +22,8 @@ const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
       </h1>
       
       <button
-        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
-        onClick={() => window.open(`/recipes#${name.toLowerCase()}`, '_blank')}
+        className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
+        onClick={handlebuttonClick}
       >
         Learn More
       </button>
