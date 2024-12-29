@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CountryCard = ({ name, image, pageLink, aosAnimation }) => {
 
   const handlebuttonClick = () => {
-    const url = `/fork-and-footprints/recipes/country#${name.toLowerCase()}`;
+    const url = `/recipes/country#${name.toLowerCase()}`;
     window.open(url, "_blank");
   };
 
