@@ -2,7 +2,7 @@ import React from "react";
 
 import belgiumFlag from "../assets/flags/belgium.svg";
 import belizeFlag from "../assets/flags/belize.svg";
-import canadaFlag from "../assets/flags/canada.svg";
+/* import canadaFlag from "../assets/flags/canada.svg";
 import croatiaFlag from "../assets/flags/croatia.svg";
 import franceFlag from "../assets/flags/france.svg";
 import germanyFlag from "../assets/flags/germany.svg";
@@ -10,7 +10,7 @@ import italyFlag from "../assets/flags/italy.svg";
 import mexicoFlag from "../assets/flags/mexico.svg";
 import netherlandsFlag from "../assets/flags/netherlands.svg";
 import portugalFlag from "../assets/flags/portugal.svg";
-import spainFlag from "../assets/flags/spain.svg";
+import spainFlag from "../assets/flags/spain.svg"; */
 
 const Divider = ({ country }) => {
   let imageSrc;
@@ -22,7 +22,7 @@ const Divider = ({ country }) => {
     case "belize":
       imageSrc = belizeFlag;
       break;
-    case "canada":
+   /* case "canada":
       imageSrc = canadaFlag;
       break;
     case "croatia":
@@ -48,7 +48,7 @@ const Divider = ({ country }) => {
       break;
     case "spain":
       imageSrc = spainFlag;
-      break;
+      break; */
 
     default:
       imageSrc = null;
