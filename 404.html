@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect all 404 routes to the correct index.html route
+      const path = window.location.pathname;
+      const base = '/fork-and-footprints'; // Repository name only
+      if (!path.startsWith(base)) {
+        window.location.href = base + '/';
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
