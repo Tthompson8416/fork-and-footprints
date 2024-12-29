@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://tthompson8416.github.io/fork-and-footprints/'
+  base: '/fork-and-footprints/',  // Make sure this matches your GitHub Pages path
+  build: {
+    assetsDir: 'assets',  // Ensure that assets are placed in the 'assets' folder
+  },
 });
