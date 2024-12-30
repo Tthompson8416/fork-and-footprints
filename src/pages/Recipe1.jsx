@@ -1,12 +1,15 @@
 import React from 'react';
 
+
 const Recipe1 = () => {
   return (
+
     <div>
       <h1 className='mt-48'>Belgium Recipe 1: Dish Name</h1>
       <p>Details about the recipe...</p>
     </div>
+    
   );
-};
+}
 
 export default Recipe1;
