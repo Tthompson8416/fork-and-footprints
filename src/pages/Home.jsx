@@ -96,14 +96,14 @@ const Home = () => {
             }}
           >
             <div
-              className={`absolute top-10 right-10 bg-custom-accent p-4 rounded-full z-10 transition-all duration-500 ${
+              className={`absolute top-24 right-10 xl:right-24 bg-custom-accent p-4 rounded-full z-10 transition-all duration-500 ${
                 isForkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
               }`}
             >
               <img
                 src={forkImage}
                 alt="Fork Icon"
-                className="h-12 w-12"
+                className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20"
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-8">
@@ -131,14 +131,14 @@ const Home = () => {
             }}
           >
             <div
-              className={`absolute top-10 right-10 bg-custom-accent p-4 rounded-full z-10 transition-all duration-500 ${
+              className={`absolute top-24 right-10 xl:right-24 bg-custom-accent p-4 rounded-full z-10 transition-all duration-500 ${
                 isFootprintVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
               }`}
             >
               <img
                 src={footImage}
                 alt="Footprint Icon"
-                className="h-12 w-12"
+                className="h-12 w-12 md:h-16 md:w-16 2xl:h-20 2xl:w-20"
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 px-4 text-center">
