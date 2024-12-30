@@ -3,7 +3,7 @@ import React from 'react';
 const Recipe2 = () => {
   return (
     <div>
-      <h1>Belize Recipe 1: Dish Name</h1>
+      <h1 className='mt-48'>Belgium Recipe 2: Dish Name</h1>
       <p>Details about the recipe...</p>
     </div>
   );

@@ -38,8 +38,6 @@ import Recipe31 from "./pages/Recipe31";
 import Recipe32 from "./pages/Recipe32";
 import Recipe33 from "./pages/Recipe33";
 
-
-
 function App() {
   return (
     <Router basename="/fork-and-footprints">
@@ -48,39 +46,150 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/worldmap" element={<WorldMap />} />
           <Route path="/recipes" element={<RecipeCollection />} />
-          <Route path="/recipes/recipe1" element={<Recipe1 />} />
-          <Route path="/recipes/recipe2" element={<Recipe2 />} />
-          <Route path="/recipes/recipe3" element={<Recipe3 />} />
-          <Route path="/recipes/recipe4" element={<Recipe4 />} />
-          <Route path="/recipes/recipe5" element={<Recipe5 />} />
-          <Route path="/recipes/recipe6" element={<Recipe6 />} />
-          <Route path="/recipes/recipe7" element={<Recipe7 />} />
-          <Route path="/recipes/recipe8" element={<Recipe8 />} />
-          <Route path="/recipes/recipe9" element={<Recipe9 />} />
-          <Route path="/recipes/recipe10" element={<Recipe10 />} />
-          <Route path="/recipes/recipe11" element={<Recipe11 />} />
-          <Route path="/recipes/recipe12" element={<Recipe12 />} />
-          <Route path="/recipes/recipe13" element={<Recipe13/>} />
-          <Route path="/recipes/recipe14" element={<Recipe14/>} />
-          <Route path="/recipes/recipe15" element={<Recipe15/>} />
-          <Route path="/recipes/recipe16" element={<Recipe16/>} />
-          <Route path="/recipes/recipe17" element={<Recipe17/>} />
-          <Route path="/recipes/recipe18" element={<Recipe18/>} />
-          <Route path="/recipes/recipe19" element={<Recipe19/>} />
-          <Route path="/recipes/recipe20" element={<Recipe20/>} />
-          <Route path="/recipes/recipe21" element={<Recipe21 />} />
-          <Route path="/recipes/recipe22" element={<Recipe22/>} />
-          <Route path="/recipes/recipe23" element={<Recipe23/>} />
-          <Route path="/recipes/recipe24" element={<Recipe24 />} />
-          <Route path="/recipes/recipe25" element={<Recipe25/>} />
-          <Route path="/recipes/recipe26" element={<Recipe26/>} />
-          <Route path="/recipes/recipe27" element={<Recipe27/>} />
-          <Route path="/recipes/recipe28" element={<Recipe28/>} />
-          <Route path="/recipes/recipe29" element={<Recipe29/>} />
-          <Route path="/recipes/recipe30" element={<Recipe30/>} />
-          <Route path="/recipes/recipe31" element={<Recipe31/>} />
-          <Route path="/recipes/recipe32" element={<Recipe32/>} />
-          <Route path="/recipes/recipe33" element={<Recipe33/>} />
+
+          <Route
+            path="/fork-and-footprints/recipes/belgium/recipe1"
+            element={<Recipe1 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/belgium/recipe2"
+            element={<Recipe2 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/belgium/recipe3"
+            element={<Recipe3 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/belize/recipe1"
+            element={<Recipe4 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/belize/recipe2"
+            element={<Recipe5 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/belize/recipe3"
+            element={<Recipe6 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/canada/recipe1"
+            element={<Recipe7 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/canada/recipe2"
+            element={<Recipe8 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/canada/recipe3"
+            element={<Recipe9 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/croatia/recipe1"
+            element={<Recipe10 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/croatia/recipe2"
+            element={<Recipe11 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/croatia/recipe3"
+            element={<Recipe12 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/france/recipe1"
+            element={<Recipe13 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/france/recipe2"
+            element={<Recipe14 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/france/recipe3"
+            element={<Recipe15 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/germany/recipe1"
+            element={<Recipe16 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/germany/recipe2"
+            element={<Recipe17 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/germany/recipe3"
+            element={<Recipe18 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/italy/recipe1"
+            element={<Recipe19 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/italy/recipe2"
+            element={<Recipe20 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/italy/recipe3"
+            element={<Recipe21 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/mexico/recipe1"
+            element={<Recipe22 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/mexico/recipe2"
+            element={<Recipe23 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/mexico/recipe3"
+            element={<Recipe24 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/netherlands/recipe1"
+            element={<Recipe25 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/netherlands/recipe2"
+            element={<Recipe26 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/netherlands/recipe3"
+            element={<Recipe27 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/portugal/recipe1"
+            element={<Recipe28 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/portugal/recipe2"
+            element={<Recipe29 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/portugal/recipe3"
+            element={<Recipe30 />}
+          />
+
+          <Route
+            path="/fork-and-footprints/recipes/spain/recipe1"
+            element={<Recipe31 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/spain/recipe2"
+            element={<Recipe32 />}
+          />
+          <Route
+            path="/fork-and-footprints/recipes/spain/recipe3"
+            element={<Recipe33 />}
+          />
+
           <Route path="/country/:id" element={<CountryDetail />} />
         </Routes>
       </Layout>

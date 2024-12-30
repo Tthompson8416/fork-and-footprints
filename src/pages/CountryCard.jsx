@@ -15,15 +15,15 @@ const CountryCard = ({ name, image, recipeLinks, aosAnimation }) => {
         {name}
       </h1>
 
-      {/* Buttons for Recipes 1-3 */}
-      {recipeLinks.map((link, index) => (
-        <button
+       {/* Map over recipeLinks to create 3 buttons dynamically */}
+       {recipeLinks.map((link, index) => (
+        <Link
           key={index}
+          to={link} // Using Link for navigation
           className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
-          onClick={() => (window.location.href = link)}
         >
-          {`Recipe ${index + 1}`} {/* Dynamically naming the button */}
-        </button>
+          Recipe {index + 1} {/* Button text */}
+        </Link>
       ))}
     </div>
   );
