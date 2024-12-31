@@ -143,7 +143,7 @@ const RecipeCollection = () => {
       <img
         src={HeroImage1}
         alt="recipes-text-on-cutting-board"
-        className="relative left-0 w-full h-[clamp(300px, 50vw, 550px)] object-contain sm:h-[270px] sm:object-cover sm:mt-8 md:object-cover md:mt-12 lg:mt-16 xl:h-[320px] 2xl:h-[375px] 3xl:h-[550px]"
+        className="relative mt-20 left-0 w-full fluid-height-hero object-cover"
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-0 3xl:mt-36 mb-24 p-4">
