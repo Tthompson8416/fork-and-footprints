@@ -20,7 +20,7 @@ const CountryCard = ({ name, image, recipeLinks, aosAnimation }) => {
         <Link
           key={index}
           to={link} // Using Link for navigation
-          className="mt-8 px-[clamp(0.5rem, 1.5vw, 1rem)] py-[clamp(0.3rem, 1vw, 0.5rem)] py-[1rem] px-[2rem] bg-blue-400 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
+          className="mt-8 fluid-padding fluid-width fluid-height text-center bg-blue-400 sm:bg-red-500 md:bg-yellow-500 lg:bg-purple-500 xl:bg-green-500 2xl:bg-black 3xl:bg-orange-600 text-white text-xl xl:text-2xl rounded hover:bg-blue-600 mx-auto block"
         >
           Recipe {index + 1} {/* Button text */}
         </Link>
