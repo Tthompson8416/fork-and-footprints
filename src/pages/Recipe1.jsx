@@ -11,7 +11,7 @@ const Recipe1 = () => {
         
         <div className="p-4 sm:p-6 md:p-8">
           <div className="text-center mb-6 md:mb-8">
-            <h1 className="text-2xl sm:text-3xl font-serif text-gray-800 mb-2">
+            <h1 className="text-2xl sm:text-3xl font-serif mb-2 mt-12 text-red-500 md:text-blue-600 lg:text-orange-600 xl:text-green-600 2xl:text-black 3xl:text-purple-800">
               Belgian Waffles
             </h1>
             <p className="text-sm sm:text-base text-gray-600 italic">
