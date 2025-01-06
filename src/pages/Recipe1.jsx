@@ -4,14 +4,27 @@ const Recipe1 = () => {
   return (
     <div className="bg-custom-cream px-4 py-6 sm:py-8 md:py-12 flex justify-center">
       <div className="bg-white rounded-lg shadow-lg w-full max-w-[95%] sm:max-w-2xl md:max-w-4xl lg:max-w-5xl relative">
-        {/* Decorative blocks - now showing from sm (640px) breakpoint */}
-        <div className="hidden sm:block absolute top-12 left-0 w-16 lg:w-24 h-3/4 bg-custom-accent/60 rounded-tl-lg" />
+        {/* Image container */}
+        <div className="relative w-full bottom-12">
+          {/* Decorative red bar */}
+          <div className="hidden sm:block absolute left-4 w-24 lg:w-24 h-[400px] bg-red-600/80 z-0" />
+          
+          {/* Image */}
+          <img
+            src={belgianWaffle}
+            alt="Belgian Waffles"
+            className="relative rounded-lg shadow-md mt-12 top-24 sm:ml-12 w-full h-[250px] sm:h-[230px] sm:w-[300px] md:h-[400px] object-cover z-1"
+          />
+        </div>
+
+        {/* Other decorative elements */}
         <div className="hidden sm:block absolute top-24 right-0 w-8 lg:w-12 h-48 bg-custom-accent/60" />
         <div className="hidden sm:block absolute bottom-0 right-0 w-16 lg:w-24 h-24 bg-sage-green/20 rounded-br-lg" />
+    
         
         <div className="p-4 sm:p-6 md:p-8">
           <div className="text-center mb-6 md:mb-8">
-            <h1 className="text-2xl sm:text-3xl font-serif mb-2 mt-12 text-red-500 md:text-blue-600 lg:text-orange-600 xl:text-green-600 2xl:text-black 3xl:text-purple-800">
+            <h1 className="text-2xl sm:text-3xl font-serif mb-2 mt-12 text-red-500 sm:text-yellow-300 md:text-blue-600 lg:text-orange-600 xl:text-green-600 2xl:text-black 3xl:text-purple-800">
               Belgian Waffles
             </h1>
             <p className="text-sm sm:text-base text-gray-600 italic">
@@ -29,11 +42,7 @@ const Recipe1 = () => {
 
           <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
             <div className="space-y-2">
-              <img
-                src={belgianWaffle}
-                alt="Belgian Waffles"
-                className="rounded-lg shadow-md w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover"
-              />
+              
               <p className="text-xs sm:text-sm text-gray-500 italic text-center">
                 Image credit -{" "}
                 <a
