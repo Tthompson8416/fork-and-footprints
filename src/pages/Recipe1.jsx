@@ -3,11 +3,11 @@ import belgianWaffle from "../assets/images/belgium-images/belgian-waffle.jpg";
 const Recipe1 = () => {
   return (
     // Updated padding to be more consistent
-    <div className="bg-custom-cream px-8 py-12 flex justify-center">
+    <div className="bg-custom-cream px-8 py-12 flex justify-center mt-12">
       {/* Adjusted max-width and padding */}
       <div className="bg-white rounded-lg shadow-lg w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
         {/* New grid container for side-by-side layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
           {/* Left column - Image section */}
           <div className="relative">
             {/* Moved decorative red bar inside image container */}
@@ -103,11 +103,8 @@ const Recipe1 = () => {
           </div>
         </div>
 
-        {/* Decorative elements */}
-          {/* Decorative red bar */}
-          <div className="hidden sm:block absolute top-24 left-4 w-24 lg:w-24 h-[400px] bg-red-600/80 z-0" />
+        {/* Right decorative bar */}
         <div className="hidden sm:block absolute top-24 right-0 w-8 lg:w-12 h-48 bg-custom-accent/60" />
-        <div className="hidden sm:block absolute bottom-0 right-0 w-16 lg:w-24 h-24 bg-sage-green/20 rounded-br-lg" />
       </div>
     </div>
   );
