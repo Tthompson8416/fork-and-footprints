@@ -2,26 +2,22 @@ import belgianWaffle from "../assets/images/belgium-images/belgian-waffle.jpg";
 
 const Recipe1 = () => {
   return (
-    // Updated padding to be more consistent
-    <div className="bg-custom-cream px-8 py-12 flex justify-center mt-12">
-      {/* Adjusted max-width and padding */}
+    <div className="bg-custom-cream px-6 py-12 flex justify-center mt-12">
       <div className="bg-white rounded-lg shadow-lg w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
-        {/* New grid container for side-by-side layout */}
+        {/* Grid container for side-by-side layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
           {/* Left column - Image section */}
           <div className="relative">
-            {/* Moved decorative red bar inside image container */}
-            <div className="hidden sm:block absolute left-4 w-24 lg:w-24 h-[400px] bg-red-600/80 z-0" />
+            <div className="hidden sm:block absolute w-24 ml-4 lg:w-24 h-[400px] bg-custom-accent/60 z-0" />
             
-            {/* Updated image styles for new layout */}
             <img
               src={belgianWaffle}
               alt="Belgian Waffles"
-              className="relative top-4 rounded-lg shadow-md w-full h-[300px] sm:h-[400px] object-cover z-10"
+              className="relative top-8 rounded-lg shadow-md w-full h-[300px] sm:h-[330px] object-cover"
             />
             
             {/* Moved image credit below image */}
-            <p className="text-xs sm:text-sm text-gray-500 italic text-center mt-8">
+            <p className="text-xs sm:text-sm text-black italic text-right mt-8 relative z-10">
               Image credit -{" "}
               <a
                 href="https://www.shopify.com/stock-photos"
@@ -38,7 +34,7 @@ const Recipe1 = () => {
           <div className="space-y-8">
             {/* Title and attribution section */}
             <div className="text-center sm:text-left">
-              <h1 className="text-2xl sm:text-3xl font-serif mb-2 text-red-500 sm:text-yellow-500">
+              <h1 className="text-2xl sm:text-3xl font-serif mb-2 text-red-500 sm:text-yellow-500 md:text-green-600 lg:text-purple-800 xl:text-orange-600 2xl:text-gray-600 3xl:text-blue-700">
                 Belgian Waffles
               </h1>
               <p className="text-sm sm:text-base text-gray-600 italic">
@@ -104,7 +100,7 @@ const Recipe1 = () => {
         </div>
 
         {/* Right decorative bar */}
-        <div className="hidden sm:block absolute top-24 right-0 w-8 lg:w-12 h-48 bg-custom-accent/60" />
+        <div className="hidden sm:block absolute top-64 right-0 w-24 lg:w-12 h-16 bg-custom-accent/60" />
       </div>
     </div>
   );
