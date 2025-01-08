@@ -2,39 +2,37 @@ import belgianWaffle from "../assets/images/belgium-images/belgian-waffle.jpg";
 
 const Recipe1 = () => {
   return (
-    <div className="bg-custom-cream px-6 py-12 flex justify-center mt-12">
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
-        {/* Grid container for side-by-side layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
+    <div className="bg-custom-cream px-8 py-12 flex justify-center">
+      <div className="bg-white rounded-lg shadow-lg top-12 w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
+        {/* Two-column grid for image and ingredients */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
           {/* Left column - Image section */}
           <div className="relative">
-            <div className="hidden sm:block absolute w-24 ml-4 lg:w-24 h-[400px] bg-custom-accent/60 z-0" />
-            
-            <img
-              src={belgianWaffle}
-              alt="Belgian Waffles"
-              className="relative top-8 rounded-lg shadow-md w-full h-[300px] sm:h-[330px] object-cover"
-            />
-            
-            {/* Moved image credit below image */}
-            <p className="text-xs sm:text-sm text-black italic text-right mt-8 relative z-10">
-              Image credit -{" "}
-              <a
-                href="https://www.shopify.com/stock-photos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                Burst
-              </a>
-            </p>
+            <div className="hidden sm:block absolute left-0 w-24 lg:w-24 h-[400px] bg-custom-accent/60 z-0" />
+            <div className="relative ml-12">
+              <img
+                src={belgianWaffle}
+                alt="Belgian Waffles"
+                className="rounded-lg shadow-md mt-8 w-full h-[300px] sm:h-[330px] object-cover z-10"
+              />
+              <p className="text-xs sm:text-sm text-gray-500 italic text-left mt-2 relative z-20">
+                Image credit -{" "}
+                <a
+                  href="https://www.shopify.com/stock-photos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800"
+                >
+                  Burst
+                </a>
+              </p>
+            </div>
           </div>
 
-          {/* Right column - Content section */}
+          {/* Right column - Title and Ingredients */}
           <div className="space-y-8">
-            {/* Title and attribution section */}
             <div className="text-center sm:text-left">
-              <h1 className="text-2xl sm:text-3xl font-serif mb-2 text-red-500 sm:text-yellow-500 md:text-green-600 lg:text-purple-800 xl:text-orange-600 2xl:text-gray-600 3xl:text-blue-700">
+              <h1 className="text-2xl sm:text-3xl font-serif mb-2 text-red-500 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
                 Belgian Waffles
               </h1>
               <p className="text-sm sm:text-base text-gray-600 italic">
@@ -50,7 +48,6 @@ const Recipe1 = () => {
               </p>
             </div>
 
-            {/* Ingredients section */}
             <div>
               <h2 className="text-xl sm:text-2xl font-serif text-gray-800 mb-3">
                 Ingredients
@@ -65,42 +62,43 @@ const Recipe1 = () => {
                 <li>3 eggs, separated</li>
               </ul>
             </div>
-
-            {/* Preparation section */}
-            <div>
-              <h2 className="text-xl sm:text-2xl font-serif text-gray-800 mb-3">
-                Preparation
-              </h2>
-              <div className="space-y-3 text-sm sm:text-base text-gray-700">
-                <p>
-                  This Belgian waffle recipe has been adapted from my Krups Waffle
-                  Maker manual, which I've modified over countless weekend brunches to
-                  create the perfect golden, crispy waffle. I've discovered that the
-                  key to exceptional Belgian waffles lies in the technique rather than
-                  fancy ingredients.
-                </p>
-                <p>
-                  Starting with room temperature ingredients makes a noticeable
-                  difference in the texture. The real magic happens when you whip
-                  those egg whites to stiff peaks- this extra step creates that
-                  characteristic light, airy interior that Belgian waffles are famous
-                  for. Through much trial and error, I've found that letting the
-                  waffle maker preheat thoroughly is crucial- I usually give it an
-                  extra minute or two after the 'ready' light comes on.
-                </p>
-                <p>
-                  For the crispiest exterior, I actually let them cook just a few
-                  seconds longer than when the signal sounds. Don't worry if the first
-                  waffle isn't perfect- like pancakes, the first one is often the
-                  test run!
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* Right decorative bar */}
-        <div className="hidden sm:block absolute top-64 right-0 w-24 lg:w-12 h-16 bg-custom-accent/60" />
+        {/* Full-width Preparation section */}
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-xl sm:text-2xl font-serif text-gray-800 mb-6 text-center">
+            Preparation
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base text-gray-700">
+            <p>
+              This Belgian waffle recipe has been adapted from my Krups Waffle
+              Maker manual, which I've modified over countless weekend brunches to
+              create the perfect golden, crispy waffle. I've discovered that the
+              key to exceptional Belgian waffles lies in the technique rather than
+              fancy ingredients.
+            </p>
+            <p>
+              Starting with room temperature ingredients makes a noticeable
+              difference in the texture. The real magic happens when you whip
+              those egg whites to stiff peaks- this extra step creates that
+              characteristic light, airy interior that Belgian waffles are famous
+              for. Through much trial and error, I've found that letting the
+              waffle maker preheat thoroughly is crucial- I usually give it an
+              extra minute or two after the 'ready' light comes on.
+            </p>
+            <p>
+              For the crispiest exterior, I actually let them cook just a few
+              seconds longer than when the signal sounds. Don't worry if the first
+              waffle isn't perfect- like pancakes, the first one is often the
+              test run!
+            </p>
+          </div>
+        </div>
+
+        {/* Decorative elements */}
+        <div className="hidden sm:block absolute top-48 right-0 w-16 lg:w-12 h-16 bg-custom-accent/60" />
+        <div className="hidden sm:block absolute bottom-0 right-0 w-16 lg:w-24 h-24 bg-sage-green/20 rounded-br-lg" />
       </div>
     </div>
   );
