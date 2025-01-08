@@ -2,8 +2,8 @@ import belgianWaffle from "../assets/images/belgium-images/belgian-waffle.jpg";
 
 const Recipe1 = () => {
   return (
-    <div className="bg-custom-cream px-8 py-12 flex justify-center">
-      <div className="bg-white rounded-lg shadow-lg top-12 w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
+    <div className="bg-custom-cream px-8 py-12 md:py-48 flex justify-center">
+      <div className="bg-white rounded-lg md:py-24 shadow-lg top-12 w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl relative p-8">
         {/* Two-column grid for image and ingredients */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
           {/* Left column - Image section */}
@@ -15,7 +15,7 @@ const Recipe1 = () => {
                 alt="Belgian Waffles"
                 className="rounded-lg shadow-md mt-8 w-full h-[300px] sm:h-[330px] object-cover z-10"
               />
-              <p className="text-xs sm:text-sm text-gray-500 italic text-left mt-2 relative z-20">
+              <p className="text-xs sm:text-sm 2xl:text-lg text-gray-500 italic text-right mt-2 relative">
                 Image credit -{" "}
                 <a
                   href="https://www.shopify.com/stock-photos"
@@ -32,10 +32,10 @@ const Recipe1 = () => {
           {/* Right column - Title and Ingredients */}
           <div className="space-y-8">
             <div className="text-center sm:text-left">
-              <h1 className="text-2xl sm:text-3xl font-serif mb-2 text-red-500 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-serif mb-2 md:ml-16 lg:ml-24 2xl:ml-20 text-red-500 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
                 Belgian Waffles
               </h1>
-              <p className="text-sm sm:text-base text-gray-600 italic">
+              <p className="text-sm sm:text-base md:ml-12 lg:ml-24 2xl:text-lg text-gray-600 italic">
                 Original recipe from{" "}
                 <a
                   href="https://www.krupsusa.com/Recipes/Classic-Belgian-Waffles/r/239758"
@@ -49,10 +49,10 @@ const Recipe1 = () => {
             </div>
 
             <div>
-              <h2 className="text-xl sm:text-2xl font-serif text-gray-800 mb-3">
+              <h2 className="text-xl sm:text-2xl 2xl:text-4xl font-serif text-gray-800 mb-3 2xl:mb-4 pl-12">
                 Ingredients
               </h2>
-              <ul className="space-y-2 text-sm sm:text-base text-gray-700">
+              <ul className="space-y-2 text-sm sm:text-base lg:text-lg 2xl:text-2xl text-gray-700 pl-12">
                 <li>2 cups all-purpose flour</li>
                 <li>2 tablespoons sugar</li>
                 <li>4 teaspoons baking powder</li>
@@ -67,10 +67,10 @@ const Recipe1 = () => {
 
         {/* Full-width Preparation section */}
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-xl sm:text-2xl font-serif text-gray-800 mb-6 text-center">
+          <h2 className="text-xl sm:text-2xl 2xl:text-4xl font-serif text-gray-800 mb-6 text-center">
             Preparation
           </h2>
-          <div className="space-y-4 text-sm sm:text-base text-gray-700">
+          <div className="space-y-4 text-sm sm:text-base lg:text-lg 2xl:text-2xl text-gray-700">
             <p>
               This Belgian waffle recipe has been adapted from my Krups Waffle
               Maker manual, which I've modified over countless weekend brunches to
@@ -97,7 +97,7 @@ const Recipe1 = () => {
         </div>
 
         {/* Decorative elements */}
-        <div className="hidden sm:block absolute top-48 right-0 w-16 lg:w-12 h-16 bg-custom-accent/60" />
+        <div className="hidden sm:block absolute top-48 2xl:top-72 right-0 w-16 lg:w-24 h-16 lg:h-20 bg-custom-accent/60" />
         <div className="hidden sm:block absolute bottom-0 right-0 w-16 lg:w-24 h-24 bg-sage-green/20 rounded-br-lg" />
       </div>
     </div>
