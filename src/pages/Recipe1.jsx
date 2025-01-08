@@ -7,15 +7,15 @@ const Recipe1 = () => {
         {/* Two-column grid for image and ingredients */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
           {/* Left column - Image section */}
-          <div className="relative">
+          <div className="relative flex justify-center sm:block">
             <div className="hidden sm:block absolute left-0 w-24 lg:w-24 h-[400px] bg-custom-accent/60 z-0" />
-            <div className="relative ml-12">
+            <div className="relative w-[80%] sm:w-full sm:ml-12">
               <img
                 src={belgianWaffle}
                 alt="Belgian Waffles"
-                className="rounded-lg shadow-md mt-8 w-full h-[300px] sm:h-[330px] object-cover z-10"
+                className="rounded-lg shadow-md mt-8 w-full h-[200px] sm:h-[330px] object-cover z-10"
               />
-              <p className="text-xs sm:text-sm 2xl:text-lg text-gray-500 italic text-right mt-2 relative">
+              <p className="text-xs text-center sm:text-sm 2xl:text-lg text-gray-500 italic sm:text-right mt-2 relative">
                 Image credit -{" "}
                 <a
                   href="https://www.shopify.com/stock-photos"
