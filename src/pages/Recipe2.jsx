@@ -61,7 +61,7 @@ const Recipe1 = () => {
                   <li>2 tablespoon butter, unsalted</li>
                   <li>2 tablespoons flour</li>
                   <li>1 (33cl) bottle brown beer</li>
-                  <li>100 ml beef stock (+extra)</li>
+                  <li>100 ml beef stock (+ extra)</li>
                   <li>1 tablespoon red current jelly or brown sugar</li>
                   <li>1 teaspoon nutmeg</li>
                   <li>2 bay leaves</li>
@@ -73,7 +73,6 @@ const Recipe1 = () => {
           </div>
         </div>
 
-        {/* Full-width Preparation section */}
         <div className="max-w-3xl px-4 mx-auto">
           <h2 className="mb-6 text-xl font-serif text-center text-gray-800 sm:text-2xl 2xl:text-4xl">
             Preparation
