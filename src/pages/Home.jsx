@@ -72,7 +72,7 @@ const Home = () => {
                 From sun-drenched Mediterranean markets to cozy Alpine kitchens,
                 every meal tells a story of place and tradition. Join me as I share the
                 hidden gems and mouthwatering discoveries that make each
-                destination uniquely delicious."
+                destination uniquely delicious.
               </p>
             </div>
             <div
@@ -112,7 +112,7 @@ const Home = () => {
                 Explore Recipes
               </h2>
               <p className="text-lg sm:text-xl mt-6 text-center leading-relaxed max-w-3xl">
-                A collection of recipes inspired by the places I have visited.
+                A collection of recipes inspired by the places I have traveled.
               </p>
               <Link to="/recipes">
                 <button className="px-4 py-2 bg-custom-accent mt-8 text-white text-lg font-medium rounded-lg hover:bg-opacity-80 transition-all duration-300">
@@ -149,8 +149,7 @@ const Home = () => {
                 Discover Global Cuisine
               </h2>
               <p className="mt-4 text-lg sm:text-xl max-w-3xl leading-relaxed">
-                From street food in Thailand to pasta in Italy, taste the
-                world’s finest dishes and immerse yourself in the culture.
+                Immerse yourself in the culture behind the world’s finest dishes.
               </p>
               <Link to="/worldmap">
                 <button className="mt-8 px-6 py-3 ml-6 tracking-wider bg-custom-accent text-white text-lg rounded-md hover:bg-opacity-90">
