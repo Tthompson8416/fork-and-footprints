@@ -18,12 +18,12 @@ const Recipe1 = () => {
               <p className="relative mt-2 text-xs text-center text-gray-500 sm:text-sm 2xl:text-lg sm:text-right italic">
                 Image credit -{" "}
                 <a
-                  href="https://www.freepik.com/free-photo/top-half-view-chicken-with-cheese-platter-parsley-half-lemon-cherry-tomatoes-grey-table_13844607.htm#fromView=image_search_similar&page=1&position=12&uuid=f9d1f921-40b5-4a8a-aee7-40f40447005e&new_detail=true"
+                  href="https://www.freepik.com/free-photo/high-angle-bowl-with-delicious-boneless-chicken_35022701.htm#fromView=image_search_similar&page=1&position=0&uuid=0e239c4c-f5ea-4462-8850-82cd8b5d9ec7&new_detail=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
                 >
-                  Kamran Aydinov on Freepik
+                  Freepik
                 </a>
               </p>
             </div>
@@ -38,12 +38,12 @@ const Recipe1 = () => {
               <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
                 <a
-                  href="https://noseychef.com/2021/10/20/sole-meuniere/"
+                  href="https://belize-travel-blog.chaacreek.com/2015/01/learn-how-to-make-belizean-conch-fritters/ "
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
                 >
-                  noseychef.com
+                  belize-travel-blog.chaacreek.com
                 </a>
               </p>
             </div>
@@ -55,25 +55,18 @@ const Recipe1 = () => {
               <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
                 <ul>
                   <ul>
-                    <li>All-purpose flour, for dredging (about 1/2cup)</li>
-                    <li>
-                      1 1/2 pounds (680g) thin boneless, skinless sole or other
-                      white-fleshed fish fillets
-                    </li>
-                    <li>Kosher salt</li>
-                    <li>
-                      4 tablespoons (60g) homemade or store-bought clarified
-                      butter, plus more if needed
-                    </li>
-                    <li>
-                      6 tablespoons (90g) unsalted butter, cut into 1-tablespoon
-                      pieces
-                    </li>
-                    <li>1 lemon, cut into wedges, plus more for serving</li>
-                    <li>
-                      1 1/2 tablespoons (1/4 ounce; 8g) flat-leaf parsley leaves
-                      and tender stems
-                    </li>
+                   <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ul>
                   </ul>
                 </ul>
               </ul>

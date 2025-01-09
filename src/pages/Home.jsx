@@ -68,10 +68,11 @@ const Home = () => {
               <h1 className="relative mt-8 mb-6 md:mt-12 md:mb-8 xl:mb-16 text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider">
                 Fork & Footprints
               </h1>
-              <p className="w-screen pr-24 pl-6 sm:pr-32 sm:pl-4 md:pl-2 md:pr-40 lg:ml-28 lg:w-[850px] text-lg sm:text-2xl md:text-3xl xl:text-4xl leading-relaxed">
-                Explore the world, one bite at a time.
-                Come join me on my culinary journey across Europe as I show you
-                beautiful places and their tasty cuisine.
+              <p className="w-screen pr-24 pl-6 sm:pr-32 sm:pl-4 md:pl-2 md:pr-40 lg:ml-28 lg:w-[850px] text-md sm:text-xl md:text-2xl xl:text-3xl leading-relaxed">
+                From sun-drenched Mediterranean markets to cozy Alpine kitchens,
+                every meal tells a story of place and tradition. Join me as I share the
+                hidden gems and mouthwatering discoveries that make each
+                destination uniquely delicious."
               </p>
             </div>
             <div
@@ -80,8 +81,8 @@ const Home = () => {
               }`}
             >
               <p>
-                "Travel far, taste deeply, and embrace every moment."
-                <br />- Travis Scott
+              “Life is short, and the world is wide. The sooner you start exploring it, the better”
+                <br />– Simon Raven
               </p>
             </div>
           </div>
@@ -132,7 +133,9 @@ const Home = () => {
           >
             <div
               className={`absolute top-24 right-10 xl:right-24 bg-custom-accent p-4 rounded-full z-10 transition-all duration-500 ${
-                isFootprintVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                isFootprintVisible
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-50"
               }`}
             >
               <img
