@@ -32,10 +32,10 @@ const Recipe1 = () => {
           {/* Right column - Title and Ingredients */}
           <div className="relative z-10 space-y-8">
             <div className="text-center sm:text-left">
-              <h1 className="mb-2 text-2xl font-serif text-red-500 sm:text-2xl lg:text-4xl 2xl:text-5xl sm:ml-12 lg:ml-24 2xl:ml-20 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
+              <h1 className="mb-2 text-2xl text-center font-serif text-red-500 sm:text-2xl lg:text-4xl 2xl:text-5xl sm:ml-12 lg:ml-24 2xl:ml-20 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
                 Fleming Stew
               </h1>
-              <p className="text-sm italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
+              <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
                 <a
                   href="https://leeksandhighheels.com/recipes/belgian-classics/belgian-classics-how-to-make-flemish-beef-stew/"

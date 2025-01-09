@@ -32,10 +32,10 @@ const Recipe1 = () => {
           {/* Right column - Title and Ingredients */}
           <div className="relative z-10 space-y-8">
             <div className="text-center sm:text-left">
-              <h1 className="mb-2 text-2xl font-serif text-red-500 sm:text-2xl lg:text-4xl 2xl:text-5xl sm:ml-12 lg:ml-24 2xl:ml-20 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
+              <h1 className="mb-2 text-2xl text-center font-serif text-red-500 sm:text-2xl lg:text-4xl 2xl:text-5xl sm:ml-12 lg:ml-24 2xl:ml-20 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
                 Belgian Waffles
               </h1>
-              <p className="text-sm italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
+              <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
                 <a
                   href="https://www.krupsusa.com/Recipes/Classic-Belgian-Waffles/r/239758"
@@ -49,10 +49,10 @@ const Recipe1 = () => {
             </div>
 
             <div>
-              <h2 className="pl-12 mb-3 text-xl font-serif text-gray-800 sm:text-2xl 2xl:text-4xl 2xl:mb-4">
+              <h2 className="pl-24 mb-3 text-xl font-serif text-gray-800 sm:text-2xl 2xl:text-4xl 2xl:mb-4">
                 Ingredients
               </h2>
-              <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
+              <ul className="pl-24 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
                 <li>2 cups all-purpose flour</li>
                 <li>2 tablespoons sugar</li>
                 <li>4 teaspoons baking powder</li>
