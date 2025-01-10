@@ -38,7 +38,7 @@ const Recipe1 = () => {
               <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
                 <a
-                  href="https://belize-travel-blog.chaacreek.com/2015/01/learn-how-to-make-belizean-conch-fritters/ "
+                  href="https://belize-travel-blog.chaacreek.com/2015/01/learn-how-to-make-belizean-conch-fritters/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
