@@ -64,7 +64,7 @@ const Home = () => {
               backgroundImage: `url(${backgroundImage})`,
             }}
           >
-            <div className="absolute max-w-[85%] w-[900px] h-[300px] xl:h-[400px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
+            <div className="absolute max-w-[85%] w-[900px] h-[350px] xl:h-[400px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-gray-200 text-center rounded-lg">
               <h1 className="relative mt-8 mb-6 md:mt-12 md:mb-8 xl:mb-16 text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider">
                 Fork & Footprints
               </h1>
