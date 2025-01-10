@@ -33,7 +33,7 @@ const Recipe1 = () => {
           <div className="relative z-10 space-y-8">
             <div className="text-center sm:text-left">
               <h1 className="mb-2 text-2xl text-center font-serif text-red-500 sm:text-2xl lg:text-4xl 2xl:text-5xl sm:ml-12 lg:ml-24 2xl:ml-20 sm:text-yellow-500 md:text-blue-700 lg:text-gray-600 xl:text-purple-700 2xl:text-green-700 3xl:text-orange-700">
-              Belizean Conch Fritters
+                Belizean Conch Fritters
               </h1>
               <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
@@ -55,18 +55,20 @@ const Recipe1 = () => {
               <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
                 <ul>
                   <ul>
-                   <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
+                    <ul>
+                      <li>1 1/2 pounds of Belizean conch</li>
+                      <li>1 sweet pepper (medium size)</li>
+                      <li>1 onion (medium size)</li>
+                      <li>1 1/4 cup of flour</li>
+                      <li>1 1/2 cup of water</li>
+                      <li>
+                        5 leaves of your choice of herb (cilantro, basil, etc…)
+                      </li>
+                      <li>1 celery stalk</li>
+                      <li>1/4 teaspoon of salt</li>
+                      <li>1/4 teaspoon of pepper</li>
+                      <li>1/4 of Habanero chili pepper (optional)</li>
+                    </ul>
                   </ul>
                 </ul>
               </ul>
@@ -80,35 +82,32 @@ const Recipe1 = () => {
           </h2>
           <div className="space-y-4 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl">
             <p>
-              This classic Sole Meunière recipe has become my go-to method for
-              preparing this elegant French fish dish. Through many attempts at
-              perfecting this seemingly simple but technique-driven recipe, I've
-              learned that success lies in the details: The key is starting with
-              high-quality, fresh Dover sole (though you can also use other
-              delicate white fish). I've found that patting the fish completely
-              dry before dredging in flour makes a huge difference in achieving
-              that perfect golden crust.
+              This recipe for Belizean Conch Fritters has been adapted from my
+              experiences with Caribbean coastal cuisine. While conch fritters
+              are popular throughout the Caribbean, this Belizean version has
+              its own special character.
             </p>
             <p>
-              The flour coating should be light - just a whisper, really - shake
-              off any excess or you'll end up with a gummy coating instead of
-              that signature crisp exterior. The magic happens in the basting
-              step - it's a technique that requires attention but rewards you
-              with perfectly cooked fish.
+              I've learned that the secret to exceptional conch fritters lies in
+              the preparation of the conch itself. The texture needs to be just
+              right - chopping too fine makes the fritters rubbery, while too
+              coarse means they won't hold together well. The quick pulses in
+              the blender help achieve that perfect consistency, where you can
+              still taste distinct pieces of conch in each bite.
             </p>
             <p>
-              When making the sauce, that moment when the butter starts foaming
-              and turns slightly nutty is crucial - the French call this 'beurre
-              noisette' (brown butter), and it's what gives this dish its
-              characteristic flavor. The splash of lemon juice not only cuts
-              through the richness but also creates a beautiful emulsion with
-              the butter.
+              Through trial and error, I've found that the batter consistency is
+              crucial - it should be like cake batter, but not too thin. The
+              vegetables need to be chopped before blending to ensure they're
+              evenly distributed without becoming too mushy. A tip from my
+              kitchen: if your oil isn't hot enough, the fritters will absorb
+              too much oil and become heavy. Test the oil with a tiny drop of
+              batter - it should sizzle immediately.
             </p>
-            <p>
-              A personal tip: I like to warm the plates before serving, as this
-              dish is best enjoyed immediately while the butter sauce is still
-              warm and the fish is at its crispiest.
-            </p>
+            I love serving these golden-brown fritters with a squeeze of fresh
+            lime and some Caribbean-style hot sauce. They're best enjoyed
+            immediately while crispy and hot, preferably with a view of the
+            ocean (though my kitchen view works too!).
           </div>
         </div>
       </div>
