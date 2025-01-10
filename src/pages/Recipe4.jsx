@@ -53,24 +53,16 @@ const Recipe1 = () => {
                 Ingredients
               </h2>
               <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
-                <ul>
-                  <ul>
-                    <ul>
-                      <li>1 1/2 pounds of Belizean conch</li>
-                      <li>1 sweet pepper (medium size)</li>
-                      <li>1 onion (medium size)</li>
-                      <li>1 1/4 cup of flour</li>
-                      <li>1 1/2 cup of water</li>
-                      <li>
-                        5 leaves of your choice of herb (cilantro, basil, etc…)
-                      </li>
-                      <li>1 celery stalk</li>
-                      <li>1/4 teaspoon of salt</li>
-                      <li>1/4 teaspoon of pepper</li>
-                      <li>1/4 of Habanero chili pepper (optional)</li>
-                    </ul>
-                  </ul>
-                </ul>
+                <li>1 1/2 pounds of Belizean conch</li>
+                <li>1 sweet pepper (medium size)</li>
+                <li>1 onion (medium size)</li>
+                <li>1 1/4 cup of flour</li>
+                <li>1 1/2 cup of water</li>
+                <li>5 leaves of your choice of herb (cilantro, basil, etc…)</li>
+                <li>1 celery stalk</li>
+                <li>1/4 teaspoon of salt</li>
+                <li>1/4 teaspoon of pepper</li>
+                <li>1/4 of Habanero chili pepper (optional)</li>
               </ul>
             </div>
           </div>

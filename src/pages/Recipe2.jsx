@@ -53,21 +53,19 @@ const Recipe1 = () => {
                 Ingredients
               </h2>
               <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
-                <ul>
-                  <li>600 gr beef , chopped in 4 cm chunks</li>
-                  <li>1 onion, roughly diced</li>
-                  <li>1 slice bread</li>
-                  <li>1 tablespoon mustard</li>
-                  <li>2 tablespoon butter, unsalted</li>
-                  <li>2 tablespoons flour</li>
-                  <li>1 (33cl) bottle brown beer</li>
-                  <li>100 ml beef stock (+ extra)</li>
-                  <li>1 tablespoon red current jelly or brown sugar</li>
-                  <li>1 teaspoon nutmeg</li>
-                  <li>2 bay leaves</li>
-                  <li>a sprig fresh thyme and rosemary</li>
-                  <li>salt and pepper</li>
-                </ul>
+                <li>600 gr beef , chopped in 4 cm chunks</li>
+                <li>1 onion, roughly diced</li>
+                <li>1 slice bread</li>
+                <li>1 tablespoon mustard</li>
+                <li>2 tablespoon butter, unsalted</li>
+                <li>2 tablespoons flour</li>
+                <li>1 (33cl) bottle brown beer</li>
+                <li>100 ml beef stock (+ extra)</li>
+                <li>1 tablespoon red current jelly or brown sugar</li>
+                <li>1 teaspoon nutmeg</li>
+                <li>2 bay leaves</li>
+                <li>a sprig fresh thyme and rosemary</li>
+                <li>salt and pepper</li>
               </ul>
             </div>
           </div>

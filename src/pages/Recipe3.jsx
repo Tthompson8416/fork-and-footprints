@@ -53,29 +53,25 @@ const Recipe1 = () => {
                 Ingredients
               </h2>
               <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
-                <ul>
-                  <ul>
-                    <li>All-purpose flour, for dredging (about 1/2cup)</li>
-                    <li>
-                      1 1/2 pounds (680g) thin boneless, skinless sole or other
-                      white-fleshed fish fillets
-                    </li>
-                    <li>Kosher salt</li>
-                    <li>
-                      4 tablespoons (60g) homemade or store-bought clarified
-                      butter, plus more if needed
-                    </li>
-                    <li>
-                      6 tablespoons (90g) unsalted butter, cut into 1-tablespoon
-                      pieces
-                    </li>
-                    <li>1 lemon, cut into wedges, plus more for serving</li>
-                    <li>
-                      1 1/2 tablespoons (1/4 ounce; 8g) flat-leaf parsley leaves
-                      and tender stems
-                    </li>
-                  </ul>
-                </ul>
+                <li>All-purpose flour, for dredging (about 1/2cup)</li>
+                <li>
+                  1 1/2 pounds (680g) thin boneless, skinless sole or other
+                  white-fleshed fish fillets
+                </li>
+                <li>Kosher salt</li>
+                <li>
+                  4 tablespoons (60g) homemade or store-bought clarified butter,
+                  plus more if needed
+                </li>
+                <li>
+                  6 tablespoons (90g) unsalted butter, cut into 1-tablespoon
+                  pieces
+                </li>
+                <li>1 lemon, cut into wedges, plus more for serving</li>
+                <li>
+                  1 1/2 tablespoons (1/4 ounce; 8g) flat-leaf parsley leaves and
+                  tender stems
+                </li>
               </ul>
             </div>
           </div>
