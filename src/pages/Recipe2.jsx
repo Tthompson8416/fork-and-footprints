@@ -49,10 +49,10 @@ const Recipe1 = () => {
             </div>
 
             <div>
-              <h2 className="pl-12 mb-3 text-xl font-serif text-gray-800 sm:text-2xl 2xl:text-4xl 2xl:mb-4">
+              <h2 className="pl-20 mb-3 text-xl font-serif text-gray-800 sm:text-2xl 2xl:text-4xl 2xl:mb-4">
                 Ingredients
               </h2>
-              <ul className="pl-12 space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
+              <ul className="pl-20 list-disc space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
                 <li>600 gr beef , chopped in 4 cm chunks</li>
                 <li>1 onion, roughly diced</li>
                 <li>1 slice bread</li>
