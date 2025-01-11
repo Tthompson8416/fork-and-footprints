@@ -12,7 +12,7 @@ const Recipe1 = () => {
             <div className="relative w-[80%] sm:w-full sm:ml-12">
               <img
                 src={butterTarts}
-                alt="Sole Meunière"
+                alt="Butter Tarts"
                 className="w-full h-[200px] sm:h-[330px] object-cover rounded-lg shadow-md mt-8 z-10"
               />
             </div>

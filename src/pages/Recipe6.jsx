@@ -12,7 +12,7 @@ const Recipe1 = () => {
             <div className="relative w-[80%] sm:w-full sm:ml-12">
               <img
                 src={salbutes}
-                alt="Sole Meunière"
+                alt="Salbutes"
                 className="w-full h-[200px] sm:h-[330px] object-cover rounded-lg shadow-md mt-8 z-10"
               />
               <p className="relative mt-2 text-xs text-center text-gray-500 sm:text-sm 2xl:text-lg sm:text-right italic">
