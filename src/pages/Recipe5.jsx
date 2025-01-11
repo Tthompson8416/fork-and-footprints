@@ -1,6 +1,6 @@
 import ceviche from "../assets/images/belize-images/ceviche.jpg";
 
-const Recipe1 = () => {
+const Recipe5 = () => {
   return (
     <div className="flex justify-center bg-custom-cream px-8 py-12 md:py-16">
       <div className="relative w-full max-w-[95%] sm:max-w-4xl lg:max-w-5xl bg-white rounded-lg shadow-lg p-8 md:py-16 top-8">
@@ -120,4 +120,4 @@ const Recipe1 = () => {
   );
 };
 
-export default Recipe1;
+export default Recipe5;
