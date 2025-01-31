@@ -1,4 +1,3 @@
-import { b } from "framer-motion/client";
 import bitterBallen from "../assets/images/netherlands-images/bitterballen.jpg";
 
 const Recipe25 = () => {
