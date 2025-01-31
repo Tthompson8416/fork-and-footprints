@@ -42,27 +42,18 @@ const Recipe27 = () => {
                 Ingredients
               </h2>
               <ul className="pl-20 list-disc space-y-2 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl z-10">
-                <li>8 medium potatoes (3lbs/1.4kg)</li>
-                <li>1 large onion, diced (2 cups)</li>
-                <li>1 bay leaf</li>
-                <li>2 cups water</li>
-                <li>
-                  2 bunches of kale (1lb/45ogms/12-14 large leaves), about 8
-                  cups, stems removed, finely chopped, lightly packed
-                </li>
-                <li>
-                  1 lb (450gms) smoked sausage: rookworst, bratwurst, kielbassa,
-                  etc (gluten free, if necessary)
-                </li>
-                <li>¼ cup (115gms) butter</li>
-                <li>¼ teaspoon pepper</li>
-                <li>¼ teaspoon nutmeg (optional)</li>
-                <li>¾ - 1 teaspoon salt</li>
-                <li>
-                  2 cans (400ml/14 oz each) pear halves in light syrup, or
-                  home-canned pears
-                </li>
-                <li>mustard</li>
+               <li>8 medium potatoes (3lbs/1.4kg)</li>
+               <li>1 large onion, diced (2 cups)</li>
+               <li>1 bay leaf</li>
+               <li>2 cups water</li>
+               <li>2 bunches of kale (1lb/45ogms/12-14 large leaves), about 8 cups, stems removed, finely chopped, lightly packed</li>
+               <li>1 lb (450gms) smoked sausage: rookworst, bratwurst, kielbassa, etc (gluten free, if necessary)</li>
+               <li>¼ cup (115gms) butter</li>
+               <li>¼ teaspoon pepper</li>
+               <li>¼ teaspoon nutmeg (optional)</li>
+               <li>¾ - 1 teaspoon salt</li>
+               <li>2 cans (400ml/14 oz each) pear halves in light syrup, or home-canned pears</li>
+               <li>mustard</li>
               </ul>
             </div>
           </div>
@@ -74,34 +65,16 @@ const Recipe27 = () => {
           </h2>
           <div className="space-y-4 text-sm text-gray-700 sm:text-base lg:text-lg 2xl:text-2xl">
             <p>
-              This hearty Stamppot recipe (specifically Boerenkool Stamppot with
-              kale) represents traditional Dutch comfort food at its finest.
-              While various versions exist throughout the Netherlands, this
-              recipe captures the essence of this beloved winter dish.
+            This hearty Stamppot recipe (specifically Boerenkool Stamppot with kale) represents traditional Dutch comfort food at its finest. While various versions exist throughout the Netherlands, this recipe captures the essence of this beloved winter dish.
             </p>
             <p>
-              Through making this dish many times, I've learned that the key to
-              perfect stamppot lies in the details. The way you chop the kale
-              matters - that technique of balling it up before slicing creates
-              the perfect-sized bits that integrate well with the mashed
-              potatoes. I've found that cooking the kale together with the
-              potatoes, rather than separately, allows the flavors to meld
-              beautifully while making the process more efficient.
+            Through making this dish many times, I've learned that the key to perfect stamppot lies in the details. The way you chop the kale matters - that technique of balling it up before slicing creates the perfect-sized bits that integrate well with the mashed potatoes. I've found that cooking the kale together with the potatoes, rather than separately, allows the flavors to meld beautifully while making the process more efficient.
             </p>
             <p>
-              The addition of the smoked sausage (rookworst) on top during
-              cooking infuses everything with its smoky flavor. A tip from my
-              kitchen: don't skip the nutmeg - it's a subtle but essential
-              element that gives stamppot its characteristic Dutch taste. I've
-              also discovered that saving some of the cooking liquid is crucial
-              for achieving the perfect consistency - you want it creamy but
-              still substantial enough to hold its shape on the plate.
+            The addition of the smoked sausage (rookworst) on top during cooking infuses everything with its smoky flavor. A tip from my kitchen: don't skip the nutmeg - it's a subtle but essential element that gives stamppot its characteristic Dutch taste. I've also discovered that saving some of the cooking liquid is crucial for achieving the perfect consistency - you want it creamy but still substantial enough to hold its shape on the plate.
             </p>
             <p>
-              The traditional serving with canned pears might seem unusual to
-              non-Dutch diners, but this sweet-savory combination is what makes
-              stamppot so special. The warm, hearty potatoes and kale contrast
-              beautifully with the cool, sweet pears.
+            The traditional serving with canned pears might seem unusual to non-Dutch diners, but this sweet-savory combination is what makes stamppot so special. The warm, hearty potatoes and kale contrast beautifully with the cool, sweet pears.
             </p>
           </div>
         </div>

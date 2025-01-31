@@ -38,7 +38,7 @@ const Recipe19 = () => {
               <p className="text-sm text-center italic text-gray-600 sm:text-md sm:ml-12 lg:ml-24 2xl:text-lg">
                 Original recipe from{" "}
                 <a
-                  href=" https://www.notquitenigella.com/2020/11/09/arancini-balls-recipe/"
+                  href="https://www.notquitenigella.com/2020/11/09/arancini-balls-recipe/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
